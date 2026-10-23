@@ -1,0 +1,152 @@
+{
+  "choices": {
+    "cuts": {
+      "dark_pool": [
+        -0.39516666666666667,
+        0.3805
+      ],
+      "dp_blocks": [
+        -0.15303333333333333,
+        0.1494333333333334
+      ],
+      "iv_rv": [
+        -0.09873333333333321,
+        0.5046
+      ],
+      "sector_flow": [
+        -0.7959999999999984,
+        0.9999
+      ],
+      "ticker_flow": [
+        -0.029666666666666654,
+        0.1472
+      ]
+    },
+    "dropped": [
+      "macro_event",
+      "option_sentiment",
+      "skew"
+    ],
+    "finalists": {
+      "F.1": [
+        "OI confirmed",
+        "31\u201390 days to expiry",
+        "over 5% OTM"
+      ],
+      "F.2": [
+        "option cheap",
+        "long only"
+      ],
+      "F.3": [
+        "setup: far OTM",
+        "option not rich",
+        "long only"
+      ]
+    },
+    "h6_cell": "0.75x2.0",
+    "h6_cell_means": {
+      "0.75x1.25": -0.0028929619010859614,
+      "0.75x2.0": -0.0017395392177398008,
+      "1.0x1.25": -0.0029003303968106195,
+      "1.0x2.0": -0.0017558911247023716,
+      "1.5x1.25": -0.0028334885940637933,
+      "1.5x2.0": -0.0017478249290055106
+    },
+    "signs": {
+      "H3": 1,
+      "H5.dark_pool": 1,
+      "H5.dp_blocks": 1,
+      "H5.sector_flow": -1,
+      "H5.ticker_flow": -1,
+      "H9.iv_rv": -1,
+      "H9.macro_event": 1,
+      "H9.option_sentiment": 1,
+      "H9.skew": 1
+    },
+    "v1": {
+      "meta": {
+        "base": "v0.5",
+        "features": [
+          "catalyst",
+          "dark_pool",
+          "dp_blocks",
+          "flow_quality",
+          "gamma_room",
+          "insider",
+          "iv_rv",
+          "macro_event",
+          "option_sentiment",
+          "persistence",
+          "regime",
+          "sector_flow",
+          "skew",
+          "ticker_flow",
+          "uw_flagged",
+          "vol_price"
+        ],
+        "label": "x5",
+        "n_train": 9994,
+        "oos_auc": null,
+        "oos_go_hit_rate_new": null,
+        "oos_go_hit_rate_v0.5": null,
+        "oos_n": 0,
+        "signed": true,
+        "source": "L2 logistic regression, signs allowed (\u03a3|w| = budget)",
+        "train_end": "2025-10-01"
+      },
+      "version": "v1",
+      "w": {
+        "catalyst": -0.192333,
+        "dark_pool": 0.075119,
+        "dp_blocks": 0.071472,
+        "flow_quality": -0.011021,
+        "gamma_room": 0.060286,
+        "insider": 0.011211,
+        "iv_rv": 0.07142,
+        "macro_event": 0.0,
+        "option_sentiment": 0.0,
+        "persistence": -0.237437,
+        "regime": -0.016112,
+        "sector_flow": -0.095187,
+        "skew": 0.0,
+        "ticker_flow": 0.017987,
+        "unusualness": 0.06,
+        "uw_flagged": 0.037955,
+        "vol_price": -0.042461
+      }
+    }
+  },
+  "frozen_at": "2026-09-30T00:49:19.282610+00:00",
+  "prereg_sha256": "e3d41db92e17ec579e46015e4a0953fcd44a7813bcde986c5e4c34bbffd0ab06",
+  "train": [
+    "2024-10-01",
+    "2025-09-30"
+  ],
+  "train_effects": {
+    "F.1": 0.0005210899559258863,
+    "F.2": 0.009029884964220372,
+    "F.3": 0.019916783484748006,
+    "H1": 0.0006005518826576015,
+    "H10": -0.00036159429135893516,
+    "H2": 0.021273526265755426,
+    "H3": 0.0009363841652349342,
+    "H4": -0.004803691266652599,
+    "H5.dark_pool": 0.004853972654861546,
+    "H5.dp_blocks": 0.00418159563832341,
+    "H5.sector_flow": 0.008229184818430517,
+    "H5.ticker_flow": 0.0007878814209120796,
+    "H6": 0.001153422683346161,
+    "H7": 7.902346575729474e-05,
+    "H8": 0.0007580329002701549,
+    "H9.iv_rv": 0.004210054005047924,
+    "H9.macro_event": null,
+    "H9.option_sentiment": null,
+    "H9.skew": null,
+    "S.clean_other": -0.0002474430172583014,
+    "S.far_otm": -0.0018484661098115845,
+    "S.pre_earnings": -0.003648975609676413,
+    "S.repeat_buyer": -0.0017373289213876788,
+    "S.sweep": -0.00250843980868166,
+    "S.whale_sweep": -0.0013093763447092
+  }
+}

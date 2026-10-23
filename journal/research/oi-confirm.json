@@ -1,0 +1,291 @@
+{
+ "note": "EXPLORATORY: did signals whose whale contract's open interest did NOT grow the next morning do worse?",
+ "confirm_ratio": 0.5,
+ "periods": {
+  "Recent months (seen before testing)": {
+   "signals": {
+    "confirmed": 309,
+    "weak": 6,
+    "fell": 4,
+    "unknown": 13
+   },
+   "groups": {
+    "confirmed": {
+     "trades": 306,
+     "mean_vs_spy": -0.01388,
+     "beat_spy": 0.412,
+     "range": [
+      -0.027919740983606556,
+      0.0006419161073825505
+     ]
+    },
+    "weak": {
+     "trades": 6,
+     "mean_vs_spy": -0.06409,
+     "beat_spy": 0.333,
+     "range": [
+      -0.13777,
+      0.004107833333333333
+     ]
+    },
+    "fell": {
+     "trades": 4,
+     "mean_vs_spy": 0.03649,
+     "beat_spy": 0.75,
+     "range": null
+    },
+    "unknown": {
+     "trades": 13,
+     "mean_vs_spy": -0.04946,
+     "beat_spy": 0.154,
+     "range": [
+      -0.08521225,
+      -0.010115833333333333
+     ]
+    }
+   },
+   "unconfirmed": {
+    "trades": 10,
+    "mean_vs_spy": -0.02386,
+    "beat_spy": 0.5,
+    "range": [
+     -0.0905599,
+     0.0338548
+    ]
+   },
+   "unconfirmed_minus_confirmed": [
+    -0.07804366481481481,
+    0.04861376353276354
+   ],
+   "fell_minus_confirmed": null
+  },
+  "All periods": {
+   "signals": {
+    "confirmed": 1381,
+    "weak": 25,
+    "fell": 18,
+    "unknown": 270
+   },
+   "groups": {
+    "confirmed": {
+     "trades": 1366,
+     "mean_vs_spy": 0.00756,
+     "beat_spy": 0.505,
+     "range": [
+      -0.0005063125,
+      0.015008612809315865
+     ]
+    },
+    "weak": {
+     "trades": 25,
+     "mean_vs_spy": -0.03122,
+     "beat_spy": 0.44,
+     "range": [
+      -0.07246416,
+      0.00681424
+     ]
+    },
+    "fell": {
+     "trades": 17,
+     "mean_vs_spy": 0.06557,
+     "beat_spy": 0.765,
+     "range": [
+      0.012422000000000002,
+      0.1260308888888889
+     ]
+    },
+    "unknown": {
+     "trades": 270,
+     "mean_vs_spy": 0.01203,
+     "beat_spy": 0.504,
+     "range": [
+      -0.001228366141732284,
+      0.02492301098901099
+     ]
+    }
+   },
+   "unconfirmed": {
+    "trades": 42,
+    "mean_vs_spy": 0.00795,
+    "beat_spy": 0.571,
+    "range": [
+     -0.02473341463414634,
+     0.04736641860465116
+    ]
+   },
+   "unconfirmed_minus_confirmed": [
+    -0.038117665594647444,
+    0.03491867725752509
+   ],
+   "fell_minus_confirmed": [
+    0.002276318879390258,
+    0.12513646407914764
+   ]
+  },
+  "Sealed test": {
+   "signals": {
+    "confirmed": 596,
+    "weak": 11,
+    "fell": 3,
+    "unknown": 18
+   },
+   "groups": {
+    "confirmed": {
+     "trades": 596,
+     "mean_vs_spy": 0.01576,
+     "beat_spy": 0.527,
+     "range": [
+      0.0027805580589254767,
+      0.02896009756097561
+     ]
+    },
+    "weak": {
+     "trades": 11,
+     "mean_vs_spy": -0.02976,
+     "beat_spy": 0.455,
+     "range": [
+      -0.08129118181818182,
+      0.017541181818181817
+     ]
+    },
+    "fell": {
+     "trades": 3,
+     "mean_vs_spy": 0.02117,
+     "beat_spy": 0.667,
+     "range": null
+    },
+    "unknown": {
+     "trades": 18,
+     "mean_vs_spy": -0.00732,
+     "beat_spy": 0.5,
+     "range": [
+      -0.03625805555555556,
+      0.02230313043478261
+     ]
+    }
+   },
+   "unconfirmed": {
+    "trades": 14,
+    "mean_vs_spy": -0.01885,
+    "beat_spy": 0.5,
+    "range": [
+     -0.0565475,
+     0.01799442857142857
+    ]
+   },
+   "unconfirmed_minus_confirmed": [
+    -0.0790746292466765,
+    0.006731788993710689
+   ],
+   "fell_minus_confirmed": null
+  },
+  "Practice year (rules chosen here)": {
+   "signals": {
+    "confirmed": 462,
+    "weak": 8,
+    "fell": 10,
+    "unknown": 8
+   },
+   "groups": {
+    "confirmed": {
+     "trades": 462,
+     "mean_vs_spy": 0.01118,
+     "beat_spy": 0.539,
+     "range": [
+      0.0007603886462882094,
+      0.021764833333333334
+     ]
+    },
+    "weak": {
+     "trades": 8,
+     "mean_vs_spy": -0.00859,
+     "beat_spy": 0.5,
+     "range": [
+      -0.085156625,
+      0.061358125
+     ]
+    },
+    "fell": {
+     "trades": 10,
+     "mean_vs_spy": 0.09051,
+     "beat_spy": 0.8,
+     "range": [
+      0.008616200000000003,
+      0.18218033333333333
+     ]
+    },
+    "unknown": {
+     "trades": 8,
+     "mean_vs_spy": -0.00303,
+     "beat_spy": 0.5,
+     "range": [
+      -0.05072525,
+      0.04637425
+     ]
+    }
+   },
+   "unconfirmed": {
+    "trades": 18,
+    "mean_vs_spy": 0.04647,
+    "beat_spy": 0.667,
+    "range": [
+     -0.020979882352941175,
+     0.1150862380952381
+    ]
+   },
+   "unconfirmed_minus_confirmed": [
+    -0.023884866891420598,
+    0.1056776997782705
+   ],
+   "fell_minus_confirmed": [
+    -0.010998462719298241,
+    0.1901554847285068
+   ]
+  },
+  "Second sealed test (2023\u201324)": {
+   "signals": {
+    "confirmed": 2,
+    "weak": 0,
+    "fell": 0,
+    "unknown": 231
+   },
+   "groups": {
+    "confirmed": {
+     "trades": 2,
+     "mean_vs_spy": 0.00606,
+     "beat_spy": 0.5,
+     "range": null
+    },
+    "weak": {
+     "trades": 0,
+     "mean_vs_spy": null,
+     "beat_spy": null,
+     "range": null
+    },
+    "fell": {
+     "trades": 0,
+     "mean_vs_spy": null,
+     "beat_spy": null,
+     "range": null
+    },
+    "unknown": {
+     "trades": 231,
+     "mean_vs_spy": 0.01752,
+     "beat_spy": 0.524,
+     "range": [
+      0.0029794820717131466,
+      0.03259842173913043
+     ]
+    }
+   },
+   "unconfirmed": {
+    "trades": 0,
+    "mean_vs_spy": null,
+    "beat_spy": null,
+    "range": null
+   },
+   "unconfirmed_minus_confirmed": null,
+   "fell_minus_confirmed": null
+  }
+ }
+}

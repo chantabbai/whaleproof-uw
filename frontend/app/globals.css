@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* Signal Desk: a clean sheet, marked up by hand. The highlighter (--marker) only ever marks what passed the filter.
+   Direction is never colour alone: ▲/▼ and a word always go with cobalt (up) / rust (down), a colour-blind-safe pair.
+   Old token names (panel, line, muted, brass…) are kept so every page picks up the new look. */
+:root {
+  --sheet: #f6f7f5;
+  --sheet-2: #eceeea;
+  --ink: #1a1c1e;
+  --pencil: #5e636a;
+  --rule: #d9dcd6;
+  --marker: #f4e35a;
+  --marker-ink: #1a1c1e;
+  --bull: #1f5bb5;
+  --bear: #ae4710;
+  --warn: #8a5300;
+  --bad: #b3261e;
+  --bull-soft: #e2eaf7;
+  --bear-soft: #f6e6db;
+  --hay-0: #dfe2dc;       /* haystack: alert that got nowhere */
+  --hay-1: #8f959c;       /* one-way bet */
+  --hay-2: #1a1c1e;       /* new buy */
+  --brass: #6b5b00;       /* text that refers to the filter's picks, readable on the sheet */
+  --brass-soft: #fbf3b8;
+  /* owner 10-07 colour pass: sea = whale-theme accent, amber = selling soon, heat = size of an expected earnings move */
+  --sea: #2d7c72;
+  --sea-soft: #dcefec;
+  --amber: #8a5f12;
+  --heat-3: #f6d2b8; --heat-3-ink: #9a3d0c;
+  --heat-2: #f9e3d2; --heat-2-ink: #8f5126;
+  --heat-1: #f1ebe4; --heat-1-ink: #6e5a45;
+  /* aliases used by the SVG charts */
+  --line: var(--rule);
+  --muted: var(--pencil);
+  --text: var(--ink);
+  --panel: var(--sheet);
+}
+:root[data-theme="dark"] {
+  --hay-0: #2c2f34;
+  --hay-1: #7f868e;
+  --hay-2: #eef0f2;
+  --sheet: #17181a;
+  --sheet-2: #202226;
+  --ink: #ecedea;
+  --pencil: #a0a4aa;
+  --rule: #34373b;
+  --marker: #d8c540;
+  --marker-ink: #17181a;
+  --bull: #86b6ff;
+  --bear: #f0985c;
+  --warn: #e8c15a;
+  --bad: #ff8a80;
+  --bull-soft: #1d2a3d;
+  --bear-soft: #3a2619;
+  --brass: #e2d04a;
+  --brass-soft: #2e2b17;
+  --sea: #3fc1b0;
+  --sea-soft: #15302d;
+  --amber: #c9a76a;
+  --heat-3: #5a2a12; --heat-3-ink: #ffb37d;
+  --heat-2: #45301c; --heat-2-ink: #f7c08f;
+  --heat-1: #33291f; --heat-1-ink: #e8c7a4;
+}
+@theme inline {
+  --color-ink: var(--sheet);          /* legacy name: page background */
+  --color-panel: var(--sheet);
+  --color-panel2: var(--sheet-2);
+  --color-line: var(--rule);
+  --color-text: var(--ink);
+  --color-muted: var(--pencil);
+  --color-bull: var(--bull);
+  --color-bear: var(--bear);
+  --color-brass: var(--brass);
+  --color-warn: var(--warn);
+  --color-bad: var(--bad);
+  --color-bull-soft: var(--bull-soft);
+  --color-bear-soft: var(--bear-soft);
+  --color-brass-soft: var(--brass-soft);
+  --color-marker: var(--marker);
+  --color-sea: var(--sea);
+  --color-sea-soft: var(--sea-soft);
+  --color-amber: var(--amber);
+  --color-heat-3: var(--heat-3); --color-heat-3-ink: var(--heat-3-ink);
+  --color-heat-2: var(--heat-2); --color-heat-2-ink: var(--heat-2-ink);
+  --color-heat-1: var(--heat-1); --color-heat-1-ink: var(--heat-1-ink);
+  --font-sans: var(--font-body);
+  --font-cond: var(--font-body);
+}
+html { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+body {
+  font-size: 15px;
+  line-height: 1.55;
+  background: var(--sheet);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-variation-settings: "wdth" 100;
+}
+h1, h2, h3 { letter-spacing: -0.005em; line-height: 1.2; text-wrap: balance; }
+h1 { font-variation-settings: "wdth" 125; font-weight: 800; letter-spacing: -0.018em; }
+h2 { font-variation-settings: "wdth" 112; font-weight: 700; letter-spacing: -0.01em; }
+p { text-wrap: pretty; }   /* no single orphan word on the last line */
+/* width is the type's main device: wide + heavy for names, slightly narrow for dense tables */
+.wide { font-variation-settings: "wdth" 125; font-weight: 800; letter-spacing: -0.01em; }
+table { font-variation-settings: "wdth" 92; }
+a { text-underline-offset: 3px; text-decoration-thickness: 1px; }
+:focus-visible { outline: 2px solid var(--bull); outline-offset: 2px; }
+select, input, button { font: inherit; }
+/* the highlighter: a slightly uneven stroke behind the text, like a real marker pass */
+.mark {
+  background: linear-gradient(100deg, transparent 0.2em, var(--marker) 0.25em, var(--marker) calc(100% - 0.2em), transparent calc(100% - 0.15em)) no-repeat 0 55% / 100% 92%;
+  color: var(--marker-ink);
+  padding: 0 0.18em;
+  margin: 0 -0.08em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+.sieve-bar { transition: width 700ms cubic-bezier(.2,.7,.2,1); }
+/* form controls: plain fields, one solid ink button style */
+.field { border: 1px solid var(--rule); background: var(--sheet); border-radius: 3px; padding: 0.375rem 0.75rem; font-size: 0.875rem; }
+.field::placeholder { color: var(--pencil); text-transform: none; }
+.btn { background: var(--ink); color: var(--sheet); border-radius: 3px; padding: 0.375rem 0.85rem; font-size: 0.875rem; font-weight: 600; cursor: pointer; }
+.btn:hover { opacity: 0.88; }
+/* quiet feedback: colours ease instead of snapping, a 1px press on click (reduced motion turns both off) */
+button, .btn, summary, a { transition: color 150ms ease-out, background-color 150ms ease-out, border-color 150ms ease-out, opacity 150ms ease-out; }
+button:not(:disabled):active, .btn:not(:disabled):active { transform: translateY(1px); }
+/* loading placeholder: grey shapes where the page will be, a slow calm pulse */
+@keyframes skel-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .55; } }
+.skel { background: var(--sheet-2); border-radius: 4px; animation: skel-pulse 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .skel { animation: none; } }
+.btn:disabled { opacity: 0.5; cursor: default; }
+
+/* Touch screens: 44px tap targets for controls and table links (desktop sizes unchanged) */
+@media (pointer: coarse) {
+  button, select, summary, .tap, td > a { min-height: 44px; }
+  .tap, td > a { display: inline-flex; align-items: center; }
+  summary { display: flex; align-items: center; }
+}
+
+/* Today's haystack: the one orchestrated moment — the signal squares and labels land after the field is drawn */
+@keyframes hay-pop { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: scale(1); } }
+.hay-pop { transform-box: fill-box; transform-origin: center; animation: hay-pop 420ms cubic-bezier(.2,.8,.2,1.2) 350ms both; }
+a.hay-pop { animation-name: hay-label; }
+@keyframes hay-label { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .hay-pop { animation: none; } }
+
+/* Scroll boxes anchor absolutely positioned children (e.g. .sr-only labels in table headers); otherwise those escape
+   the box and widen the whole page on phones. */
+.overflow-x-auto { position: relative; }
+
+/* Sightings hold tape (owner 10-07): two copies of the chips slide left forever; hover pauses; reduced motion = still, wrapped */
+@keyframes tape-slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.tape-track { animation: tape-slide linear infinite; }
+.tape-mask:hover .tape-track { animation-play-state: paused; }
+.tape-mask { -webkit-mask-image: linear-gradient(90deg, transparent, #000 24px, #000 calc(100% - 24px), transparent);
+             mask-image: linear-gradient(90deg, transparent, #000 24px, #000 calc(100% - 24px), transparent); }
+@keyframes tape-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.7); } }
+.tape-live { animation: tape-pulse 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .tape-track { animation: none; width: auto; flex-wrap: wrap; }
+  .tape-track [data-copy="b"] { display: none; }
+  .tape-mask { -webkit-mask-image: none; mask-image: none; }
+  .tape-live { animation: none; }
+}

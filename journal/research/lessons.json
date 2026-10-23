@@ -1,0 +1,299 @@
+{
+ "frozen": {
+  "hash": "01cabddc8fa1ab97",
+  "frozen_at": "2026-10-07T14:50:28.171727+00:00",
+  "git_sha": "346fa424a85fe26e7cae9b304ad8f98b666518a6"
+ },
+ "label": "exploratory",
+ "built_at": "2026-10-07T14:50:33.058861+00:00",
+ "rules": {
+  "take_profit_5": {
+   "text": "Sell as soon as the stock is up 5%",
+   "params": {
+    "kind": "take_profit",
+    "level": 0.05,
+    "text": "Sell as soon as the stock is up 5%"
+   },
+   "history": {
+    "trades": 1683,
+    "taken": 1683,
+    "base_avg": 0.0112612055026877,
+    "rule_avg": 0.007856321685634908,
+    "base_1k": 18952.6088610234,
+    "rule_1k": 13222.18939692355,
+    "diff_1k": -5730.419464099849,
+    "base_won": 0.5181224004753416,
+    "rule_won": 0.6631016042780749,
+    "changed": 972
+   },
+   "periods": {
+    "Recent months (seen before testing)": {
+     "trades": 334,
+     "taken": 334,
+     "base_avg": -0.016951314285150686,
+     "rule_avg": -0.007899477594832966,
+     "base_1k": -5661.738971240329,
+     "rule_1k": -2638.425516674211,
+     "diff_1k": 3023.313454566118,
+     "base_won": 0.40119760479041916,
+     "rule_won": 0.5658682634730539,
+     "changed": 165
+    },
+    "Sealed test": {
+     "trades": 628,
+     "taken": 628,
+     "base_avg": 0.01911853645315715,
+     "rule_avg": 0.011910710655738895,
+     "base_1k": 12006.44089258269,
+     "rule_1k": 7479.926291804026,
+     "diff_1k": -4526.514600778663,
+     "base_won": 0.5429936305732485,
+     "rule_won": 0.6799363057324841,
+     "changed": 376
+    },
+    "Practice year (rules chosen here)": {
+     "trades": 488,
+     "taken": 488,
+     "base_avg": 0.015479002628938652,
+     "rule_avg": 0.010331617998136002,
+     "base_1k": 7553.753282922062,
+     "rule_1k": 5041.829583090369,
+     "diff_1k": -2511.9236998316933,
+     "base_won": 0.5450819672131147,
+     "rule_won": 0.6864754098360656,
+     "changed": 293
+    },
+    "Second sealed test (2023\u201324)": {
+     "trades": 233,
+     "taken": 233,
+     "base_avg": 0.02169164659553209,
+     "rule_avg": 0.01432986711889857,
+     "base_1k": 5054.153656758977,
+     "rule_1k": 3338.8590387033664,
+     "diff_1k": -1715.2946180556107,
+     "base_won": 0.5622317596566524,
+     "rule_won": 0.7081545064377682,
+     "changed": 138
+    }
+   },
+   "helped_periods": 1,
+   "voting_periods": 4
+  },
+  "stop_loss_5": {
+   "text": "Sell if the stock falls 5%",
+   "params": {
+    "kind": "stop_loss",
+    "level": 0.05,
+    "text": "Sell if the stock falls 5%"
+   },
+   "history": {
+    "trades": 1683,
+    "taken": 1683,
+    "base_avg": 0.0112612055026877,
+    "rule_avg": 0.0052934167699924504,
+    "base_1k": 18952.6088610234,
+    "rule_1k": 8908.820423897294,
+    "diff_1k": -10043.788437126106,
+    "base_won": 0.5181224004753416,
+    "rule_won": 0.38621509209744503,
+    "changed": 877
+   },
+   "periods": {
+    "Recent months (seen before testing)": {
+     "trades": 334,
+     "taken": 334,
+     "base_avg": -0.016951314285150686,
+     "rule_avg": -0.007855114425936947,
+     "base_1k": -5661.738971240329,
+     "rule_1k": -2623.6082182629407,
+     "diff_1k": 3038.130752977388,
+     "base_won": 0.40119760479041916,
+     "rule_won": 0.30538922155688625,
+     "changed": 193
+    },
+    "Sealed test": {
+     "trades": 628,
+     "taken": 628,
+     "base_avg": 0.01911853645315715,
+     "rule_avg": 0.009255679507002663,
+     "base_1k": 12006.44089258269,
+     "rule_1k": 5812.5667303976725,
+     "diff_1k": -6193.874162185018,
+     "base_won": 0.5429936305732485,
+     "rule_won": 0.4012738853503185,
+     "changed": 323
+    },
+    "Practice year (rules chosen here)": {
+     "trades": 488,
+     "taken": 488,
+     "base_avg": 0.015479002628938652,
+     "rule_avg": 0.002116765499883363,
+     "base_1k": 7553.753282922062,
+     "rule_1k": 1032.9815639430813,
+     "diff_1k": -6520.771718978981,
+     "base_won": 0.5450819672131147,
+     "rule_won": 0.38114754098360654,
+     "changed": 264
+    },
+    "Second sealed test (2023\u201324)": {
+     "trades": 233,
+     "taken": 233,
+     "base_avg": 0.02169164659553209,
+     "rule_avg": 0.020115366299654425,
+     "base_1k": 5054.153656758977,
+     "rule_1k": 4686.880347819481,
+     "diff_1k": -367.2733089394962,
+     "base_won": 0.5622317596566524,
+     "rule_won": 0.4721030042918455,
+     "changed": 97
+    }
+   },
+   "helped_periods": 1,
+   "voting_periods": 4
+  },
+  "skip_gap_chase_2": {
+   "text": "Skip it if the stock opens 2% or more past the signal-day close",
+   "params": {
+    "kind": "skip_gap",
+    "level": 0.02,
+    "text": "Skip it if the stock opens 2% or more past the signal-day close"
+   },
+   "history": {
+    "trades": 1683,
+    "taken": 1349,
+    "base_avg": 0.0112612055026877,
+    "rule_avg": 0.009759364246540793,
+    "base_1k": 18952.6088610234,
+    "rule_1k": 16425.010026928154,
+    "diff_1k": -2527.598834095247,
+    "base_won": 0.5181224004753416,
+    "rule_won": 0.41830065359477125,
+    "changed": 334
+   },
+   "periods": {
+    "Recent months (seen before testing)": {
+     "trades": 334,
+     "taken": 267,
+     "base_avg": -0.016951314285150686,
+     "rule_avg": -0.01140129149250997,
+     "base_1k": -5661.738971240329,
+     "rule_1k": -3808.03135849833,
+     "diff_1k": 1853.707612741999,
+     "base_won": 0.40119760479041916,
+     "rule_won": 0.33532934131736525,
+     "changed": 67
+    },
+    "Sealed test": {
+     "trades": 628,
+     "taken": 498,
+     "base_avg": 0.01911853645315715,
+     "rule_avg": 0.016418361007155206,
+     "base_1k": 12006.44089258269,
+     "rule_1k": 10310.73071249347,
+     "diff_1k": -1695.71018008922,
+     "base_won": 0.5429936305732485,
+     "rule_won": 0.42356687898089174,
+     "changed": 130
+    },
+    "Practice year (rules chosen here)": {
+     "trades": 488,
+     "taken": 384,
+     "base_avg": 0.015479002628938652,
+     "rule_avg": 0.010395510371512102,
+     "base_1k": 7553.753282922062,
+     "rule_1k": 5073.009061297907,
+     "diff_1k": -2480.744221624156,
+     "base_won": 0.5450819672131147,
+     "rule_won": 0.42827868852459017,
+     "changed": 104
+    },
+    "Second sealed test (2023\u201324)": {
+     "trades": 233,
+     "taken": 200,
+     "base_avg": 0.02169164659553209,
+     "rule_avg": 0.020812453268820193,
+     "base_1k": 5054.153656758977,
+     "rule_1k": 4849.301611635105,
+     "diff_1k": -204.85204512387244,
+     "base_won": 0.5622317596566524,
+     "rule_won": 0.5021459227467812,
+     "changed": 33
+    }
+   },
+   "helped_periods": 1,
+   "voting_periods": 4
+  },
+  "exit_day_3": {
+   "text": "Sell at the third day's close instead of the fifth",
+   "params": {
+    "kind": "exit_day",
+    "sessions": 3,
+    "text": "Sell at the third day's close instead of the fifth"
+   },
+   "history": {
+    "trades": 1683,
+    "taken": 1683,
+    "base_avg": 0.0112612055026877,
+    "rule_avg": 0.008579539559326848,
+    "base_1k": 18952.6088610234,
+    "rule_1k": 14439.365078347086,
+    "diff_1k": -4513.243782676314,
+    "base_won": 0.5181224004753416,
+    "rule_won": 0.5032679738562091,
+    "changed": 1681
+   },
+   "periods": {
+    "Recent months (seen before testing)": {
+     "trades": 334,
+     "taken": 334,
+     "base_avg": -0.016951314285150686,
+     "rule_avg": -0.005779663626988749,
+     "base_1k": -5661.738971240329,
+     "rule_1k": -1930.407651414242,
+     "diff_1k": 3731.3313198260867,
+     "base_won": 0.40119760479041916,
+     "rule_won": 0.437125748502994,
+     "changed": 332
+    },
+    "Sealed test": {
+     "trades": 628,
+     "taken": 628,
+     "base_avg": 0.01911853645315715,
+     "rule_avg": 0.013406907716644241,
+     "base_1k": 12006.44089258269,
+     "rule_1k": 8419.538046052583,
+     "diff_1k": -3586.9028465301067,
+     "base_won": 0.5429936305732485,
+     "rule_won": 0.5366242038216561,
+     "changed": 628
+    },
+    "Practice year (rules chosen here)": {
+     "trades": 488,
+     "taken": 488,
+     "base_avg": 0.015479002628938652,
+     "rule_avg": 0.008128502304208985,
+     "base_1k": 7553.753282922062,
+     "rule_1k": 3966.709124453985,
+     "diff_1k": -3587.044158468077,
+     "base_won": 0.5450819672131147,
+     "rule_won": 0.48155737704918034,
+     "changed": 488
+    },
+    "Second sealed test (2023\u201324)": {
+     "trades": 233,
+     "taken": 233,
+     "base_avg": 0.02169164659553209,
+     "rule_avg": 0.017096676219977507,
+     "base_1k": 5054.153656758977,
+     "rule_1k": 3983.5255592547587,
+     "diff_1k": -1070.6280975042187,
+     "base_won": 0.5622317596566524,
+     "rule_won": 0.5536480686695279,
+     "changed": 233
+    }
+   },
+   "helped_periods": 1,
+   "voting_periods": 4
+  }
+ }
+}

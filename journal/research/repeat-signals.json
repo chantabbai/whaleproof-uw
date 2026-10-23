@@ -1,0 +1,107 @@
+{
+ "meta": {
+  "generated": "2026-10-19",
+  "hold_sessions": 5,
+  "windows": {
+   "pre": [
+    "2023-10-01",
+    "2024-10-01"
+   ],
+   "train": [
+    "2024-10-01",
+    "2025-09-30"
+   ],
+   "holdout": [
+    "2025-10-01",
+    "2026-05-29"
+   ],
+   "post": [
+    "2026-06-01",
+    "2026-09-22"
+   ]
+  },
+  "note": "Cache only (no UW API calls). Reads the point-in-time history rows (scripts/desk_build_rows.py \u2192 data/desk/*.pkl).\nRun:  cd backend && uv run python scripts/research/repeat_signals.py   \u2192  journal/research/repeat-signals.json\n\nUnit = one ticker-session (several signals on the same ticker the same day share one entry, so they count once).\n\"Repeat\" = the ticker already had a signal in the previous 4 sessions (its 5-session hold is still open).\nOutcome = x5: 5-session stock return in the signal direction minus SPY, entry next open, 0.10% cost.\nExploratory: run after the frozen filter's single holdout test; describes, cannot re-tune."
+ },
+ "by_window": {
+  "pre": {
+   "first (no open hold)": {
+    "n": 211,
+    "median": 0.006000510666084868,
+    "mean": 0.01828761804990064,
+    "mean_ex_top1pct": 0.01274806663743083,
+    "win_rate": 0.5308056872037915,
+    "worst": -0.3269010493053047,
+    "best": 0.5032235641541815
+   },
+   "repeat (earlier hold still open)": {
+    "n": 22,
+    "median": -0.006182692368976006,
+    "mean": 0.009153060324959349,
+    "mean_ex_top1pct": -0.006421451224984228,
+    "win_rate": 0.45454545454545453,
+    "worst": -0.24483637076763576,
+    "best": 0.33621780287377445
+   }
+  },
+  "holdout": {
+   "first (no open hold)": {
+    "n": 537,
+    "median": 0.005818801957544362,
+    "mean": 0.015707942697941946,
+    "mean_ex_top1pct": 0.010306166649394004,
+    "win_rate": 0.5288640595903166,
+    "worst": -0.7697335612130823,
+    "best": 0.9338450836516446
+   },
+   "repeat (earlier hold still open)": {
+    "n": 91,
+    "median": 0.0002948433379267321,
+    "mean": 0.006173502367384667,
+    "mean_ex_top1pct": 0.002092645017122838,
+    "win_rate": 0.5054945054945055,
+    "worst": -0.26276310042478923,
+    "best": 0.3734506638909493
+   }
+  },
+  "train": {
+   "first (no open hold)": {
+    "n": 411,
+    "median": 0.0034149851549551977,
+    "mean": 0.008627232436557422,
+    "mean_ex_top1pct": 0.0030440850030164163,
+    "win_rate": 0.5328467153284672,
+    "worst": -0.35940224558422684,
+    "best": 0.7122480705765101
+   },
+   "repeat (earlier hold still open)": {
+    "n": 77,
+    "median": 0.03021021128234247,
+    "mean": 0.031576588453664324,
+    "mean_ex_top1pct": 0.026570867708906862,
+    "win_rate": 0.5974025974025974,
+    "worst": -0.2208807534436591,
+    "best": 0.4120113650552314
+   }
+  },
+  "post": {
+   "first (no open hold)": {
+    "n": 280,
+    "median": -0.019749712615164117,
+    "mean": -0.014477804835353816,
+    "mean_ex_top1pct": -0.018697990398877377,
+    "win_rate": 0.4107142857142857,
+    "worst": -0.4127232615576657,
+    "best": 0.45481730400970977
+   },
+   "repeat (earlier hold still open)": {
+    "n": 44,
+    "median": -0.023020089833323154,
+    "mean": -0.020634833927322033,
+    "mean_ex_top1pct": -0.030856722502748832,
+    "win_rate": 0.38636363636363635,
+    "worst": -0.2287049467819614,
+    "best": 0.4189063748160303
+   }
+  }
+ }
+}

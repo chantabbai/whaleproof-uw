@@ -1,0 +1,43 @@
+{
+ "label": "exploratory (post-hoc)",
+ "n": 170,
+ "mean": 0.021683343979119734,
+ "median": 0.007323403908747639,
+ "mean_drop_top5": 0.01090042565157323,
+ "mean_trim5_each_side": 0.018427597622117688,
+ "tickers": 102,
+ "top_tickers": [
+  [
+   "COIN",
+   11
+  ],
+  [
+   "SMCI",
+   6
+  ],
+  [
+   "SOXL",
+   5
+  ],
+  [
+   "AFRM",
+   5
+  ],
+  [
+   "PLTR",
+   5
+  ]
+ ],
+ "ticker_weighted_mean": 0.020335067239516922,
+ "tickers_positive": 55,
+ "by_value": {
+  "cheap": {
+   "n": 67,
+   "mean": 0.026486786835446568
+  },
+  "fair": {
+   "n": 103,
+   "mean": 0.01855877435413043
+  }
+ }
+}

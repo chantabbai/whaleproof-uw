@@ -1,0 +1,28 @@
+{
+  "frozen_at": "2026-10-07T14:50:28.171727+00:00",
+  "git_sha": "346fa424a85fe26e7cae9b304ad8f98b666518a6",
+  "hash": "01cabddc8fa1ab97",
+  "candidates": {
+    "take_profit_5": {
+      "kind": "take_profit",
+      "level": 0.05,
+      "text": "Sell as soon as the stock is up 5%"
+    },
+    "stop_loss_5": {
+      "kind": "stop_loss",
+      "level": 0.05,
+      "text": "Sell if the stock falls 5%"
+    },
+    "skip_gap_chase_2": {
+      "kind": "skip_gap",
+      "level": 0.02,
+      "text": "Skip it if the stock opens 2% or more past the signal-day close"
+    },
+    "exit_day_3": {
+      "kind": "exit_day",
+      "sessions": 3,
+      "text": "Sell at the third day's close instead of the fifth"
+    }
+  },
+  "rule": "Forward test = signals whose decision time (session close + 15 min) is after frozen_at."
+}

@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local data (raw UW data must never be committed — Rule 11)
+data/*
+!data/.gitkeep
+*.sqlite
+*.sqlite-*
+*.parquet
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+.next/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+

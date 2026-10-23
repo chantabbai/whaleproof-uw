@@ -1,0 +1,174 @@
+# Unit tests (fake UW client, no key, no data) + frontend type check. The e2e suite needs the local UW cache
+# (raw data is never committed, UW data terms), so it runs locally: cd frontend && npx playwright test.
+name: CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      quickstart:
+        description: "Windows: also run desk quickstart with the UW_API_KEY secret (live UW calls)"
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.13"
+      - run: uv sync --locked
+      - run: uv run pytest -q
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npx tsc --noEmit -p .
+  # Windows: the launcher (`whaleproof desk ...`) starts the desk without bash; no .env → cache-only, zero UW calls.
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.13"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: uv sync --locked
+        working-directory: backend
+      - run: uv run pytest -q tests/unit/test_desk_launcher.py
+        working-directory: backend
+      - run: npm ci
+        working-directory: frontend
+      - run: uv run whaleproof desk up
+        working-directory: backend
+      - name: API and UI answer after uv exits (children survive)
+        shell: pwsh
+        run: |
+          foreach ($url in "http://127.0.0.1:8100/api/desk/status", "http://127.0.0.1:3100/") {
+            $ok = $false
+            for ($i = 0; $i -lt 180; $i++) {
+              try { $r = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 10; if ($r.StatusCode -lt 400) { $ok = $true; break } } catch {}
+              Start-Sleep -Seconds 1
+            }
+            if (-not $ok) { Write-Error "$url did not answer within 180 s"; exit 1 }
+            Write-Host "$url up"
+          }
+      - run: uv run whaleproof desk status
+        working-directory: backend
+      - run: uv run whaleproof desk down
+        working-directory: backend
+      - name: Ports 8100 and 3100 are free
+        shell: pwsh
+        run: |
+          $busy = Get-NetTCPConnection -State Listen -ErrorAction SilentlyContinue | Where-Object { $_.LocalPort -in 8100, 3100 }
+          if ($busy) { $busy | Format-Table LocalAddress, LocalPort, OwningProcess; Write-Error "ports still in use"; exit 1 }
+          Write-Host "ports free"
+      - name: Desk log tails
+        if: failure()
+        shell: pwsh
+        run: |
+          foreach ($f in "data/serve.log", "data/frontend.log") {
+            Write-Host "== $f"; if (Test-Path $f) { Get-Content $f -Tail 60 } }
+      # Whole suite last, so a Windows-only test failure elsewhere never hides the launcher result above.
+      # Tests read/write files without an encoding (cp1252 on Windows); the launcher runs the app in UTF-8 mode too.
+      - name: All unit tests
+        if: always()
+        run: uv run pytest -q
+        working-directory: backend
+        env:
+          PYTHONUTF8: "1"
+  # Manual only (Run workflow → quickstart): fresh-key quickstart on Windows with the repo's UW_API_KEY secret.
+  # The key reaches only the step that writes .env, after every install step (no install script sees it).
+  windows-quickstart:
+    if: github.event_name == 'workflow_dispatch' && inputs.quickstart
+    runs-on: windows-latest
+    steps:
+      - id: key
+        name: Is the UW_API_KEY secret set?
+        shell: pwsh
+        env:
+          UW_API_KEY: ${{ secrets.UW_API_KEY }}
+        run: |
+          if ($env:UW_API_KEY) { "has=true" >> $env:GITHUB_OUTPUT } else { "has=false" >> $env:GITHUB_OUTPUT; Write-Host "no UW_API_KEY secret - skipping" }
+      - if: steps.key.outputs.has == 'true'
+        uses: actions/checkout@v4
+      - if: steps.key.outputs.has == 'true'
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.13"
+      - if: steps.key.outputs.has == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - if: steps.key.outputs.has == 'true'
+        run: uv sync --locked
+        working-directory: backend
+      - if: steps.key.outputs.has == 'true'
+        run: npm ci
+        working-directory: frontend
+      - if: steps.key.outputs.has == 'true'
+        name: Write .env (key not echoed)
+        shell: pwsh
+        env:
+          UW_API_KEY: ${{ secrets.UW_API_KEY }}
+        run: '"UW_API_KEY=$env:UW_API_KEY" | Out-File -FilePath .env -Encoding utf8NoBOM'
+      - if: steps.key.outputs.has == 'true'
+        run: uv run whaleproof desk quickstart
+        working-directory: backend
+      - if: steps.key.outputs.has == 'true'
+        name: API and UI answer after uv exits (children survive)
+        shell: pwsh
+        run: |
+          foreach ($url in "http://127.0.0.1:8100/api/desk/status", "http://127.0.0.1:3100/") {
+            $ok = $false
+            for ($i = 0; $i -lt 180; $i++) {
+              try { $r = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 10; if ($r.StatusCode -lt 400) { $ok = $true; break } } catch {}
+              Start-Sleep -Seconds 1
+            }
+            if (-not $ok) { Write-Error "$url did not answer within 180 s"; exit 1 }
+            Write-Host "$url up"
+          }
+      - if: steps.key.outputs.has == 'true'
+        name: Desk status JSON
+        shell: pwsh
+        run: |
+          $s = Invoke-RestMethod -Uri "http://127.0.0.1:8100/api/desk/status" -TimeoutSec 30
+          if ($s.auth_failed) { Write-Error "UW refused the key"; exit 1 }
+          Write-Host "data_day=$($s.data_day) blocked=$($s.blocked) quota_exhausted=$($s.quota_exhausted)"
+      - if: steps.key.outputs.has == 'true'
+        run: uv run whaleproof desk down
+        working-directory: backend
+      - if: steps.key.outputs.has == 'true'
+        name: Ports 8100 and 3100 are free
+        shell: pwsh
+        run: |
+          $busy = Get-NetTCPConnection -State Listen -ErrorAction SilentlyContinue | Where-Object { $_.LocalPort -in 8100, 3100 }
+          if ($busy) { $busy | Format-Table LocalAddress, LocalPort, OwningProcess; Write-Error "ports still in use"; exit 1 }
+          Write-Host "ports free"
+      - name: Desk log tails (errors only)
+        if: failure() && steps.key.outputs.has == 'true'
+        shell: pwsh
+        run: |
+          foreach ($f in "data/serve.log", "data/frontend.log") {
+            Write-Host "== $f"; if (Test-Path $f) { Select-String -Path $f -Pattern "ERROR|Error|Traceback|Exception" | Select-Object -Last 40 | ForEach-Object { $_.Line } } }

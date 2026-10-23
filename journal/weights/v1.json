@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "base": "v0.5",
+    "features": [
+      "catalyst",
+      "dark_pool",
+      "dp_blocks",
+      "flow_quality",
+      "gamma_room",
+      "insider",
+      "iv_rv",
+      "macro_event",
+      "option_sentiment",
+      "persistence",
+      "regime",
+      "sector_flow",
+      "skew",
+      "ticker_flow",
+      "uw_flagged",
+      "vol_price"
+    ],
+    "label": "x5",
+    "n_train": 9994,
+    "oos_auc": null,
+    "oos_go_hit_rate_new": null,
+    "oos_go_hit_rate_v0.5": null,
+    "oos_n": 0,
+    "signed": true,
+    "source": "L2 logistic regression, signs allowed (\u03a3|w| = budget)",
+    "train_end": "2025-10-01"
+  },
+  "version": "v1",
+  "w": {
+    "catalyst": -0.192333,
+    "dark_pool": 0.075119,
+    "dp_blocks": 0.071472,
+    "flow_quality": -0.011021,
+    "gamma_room": 0.060286,
+    "insider": 0.011211,
+    "iv_rv": 0.07142,
+    "macro_event": 0.0,
+    "option_sentiment": 0.0,
+    "persistence": -0.237437,
+    "regime": -0.016112,
+    "sector_flow": -0.095187,
+    "skew": 0.0,
+    "ticker_flow": 0.017987,
+    "unusualness": 0.06,
+    "uw_flagged": 0.037955,
+    "vol_price": -0.042461
+  }
+}

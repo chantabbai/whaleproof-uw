@@ -1,0 +1,235 @@
+{
+ "label": "exploratory ($500 flat per trade, stock, 5 sessions; not in UI)",
+ "method": "EXPLORATORY: $500 flat per trade, stock only (owner question 2026-10-02, not shown in the UI).\nEvery bet = buy $500 of the stock at the next session open, sell at the close of the 5th session (r5, net 0.10% round\ntrip, same unit as the tracker/lookup: one bet per ticker/direction/kind/day). No compounding, no position limit \u2014 each\ntrade is its own $500. Groups: signals (frozen filter tiers) and all directional bets UW flags. Two ways to act:\n\"with direction\" (bullish \u2192 buy, bearish \u2192 short) and \"buy only\" (bullish bets bought, bearish skipped; plus bearish\nbets bought anyway, to show buying every alert blindly). SPY row = the same $500 put into SPY over the same 5 sessions.\nCache-only. \u2192 journal/research/flat-500-per-trade.json\nUsage: uv run python scripts/research/flat_500_per_trade.py",
+ "stake": 500.0,
+ "groups": {
+  "All bets \u00b7 with direction": {
+   "Second sealed test (2023\u201324)": {
+    "trades": 61833,
+    "invested": 30916500.0,
+    "total_pnl": -15192.4,
+    "avg_pnl": -0.25,
+    "median_pnl": -0.38,
+    "win_share": 0.493,
+    "best": 1137.89,
+    "worst": -738.38,
+    "spy_same_days_total": 162915.76
+   },
+   "All periods": {
+    "trades": 275187,
+    "invested": 137593500.0,
+    "total_pnl": -90140.47,
+    "avg_pnl": -0.33,
+    "median_pnl": -0.44,
+    "win_share": 0.493,
+    "best": 7515.73,
+    "worst": -7516.73,
+    "spy_same_days_total": 480525.01
+   },
+   "Practice year (rules chosen here)": {
+    "trades": 92754,
+    "invested": 46377000.0,
+    "total_pnl": -31964.62,
+    "avg_pnl": -0.34,
+    "median_pnl": -0.47,
+    "win_share": 0.492,
+    "best": 7515.73,
+    "worst": -7516.73,
+    "spy_same_days_total": 167032.51
+   },
+   "Sealed test": {
+    "trades": 77681,
+    "invested": 38840500.0,
+    "total_pnl": -5537.63,
+    "avg_pnl": -0.07,
+    "median_pnl": -0.42,
+    "win_share": 0.494,
+    "best": 2012.58,
+    "worst": -1914.95,
+    "spy_same_days_total": 134433.84
+   },
+   "Recent months (seen before testing)": {
+    "trades": 42919,
+    "invested": 21459500.0,
+    "total_pnl": -37445.82,
+    "avg_pnl": -0.87,
+    "median_pnl": -0.55,
+    "win_share": 0.492,
+    "best": 3604.76,
+    "worst": -3605.76,
+    "spy_same_days_total": 16142.9
+   }
+  },
+  "All bets \u00b7 buy bullish only": {
+   "Second sealed test (2023\u201324)": {
+    "trades": 32124,
+    "invested": 16062000.0,
+    "total_pnl": 65631.95,
+    "avg_pnl": 2.04,
+    "median_pnl": 1.71,
+    "win_share": 0.535,
+    "best": 1137.89,
+    "worst": -420.13,
+    "spy_same_days_total": 83980.9
+   },
+   "All periods": {
+    "trades": 142990,
+    "invested": 71495000.0,
+    "total_pnl": 266407.15,
+    "avg_pnl": 1.86,
+    "median_pnl": 0.79,
+    "win_share": 0.513,
+    "best": 7515.73,
+    "worst": -468.32,
+    "spy_same_days_total": 248575.68
+   },
+   "Practice year (rules chosen here)": {
+    "trades": 48222,
+    "invested": 24111000.0,
+    "total_pnl": 155655.15,
+    "avg_pnl": 3.23,
+    "median_pnl": 1.76,
+    "win_share": 0.53,
+    "best": 7515.73,
+    "worst": -468.32,
+    "spy_same_days_total": 88157.48
+   },
+   "Sealed test": {
+    "trades": 40467,
+    "invested": 20233500.0,
+    "total_pnl": 90398.3,
+    "avg_pnl": 2.23,
+    "median_pnl": 0.1,
+    "win_share": 0.501,
+    "best": 2012.58,
+    "worst": -407.11,
+    "spy_same_days_total": 70800.24
+   },
+   "Recent months (seen before testing)": {
+    "trades": 22177,
+    "invested": 11088500.0,
+    "total_pnl": -45278.24,
+    "avg_pnl": -2.04,
+    "median_pnl": -2.23,
+    "win_share": 0.468,
+    "best": 3604.76,
+    "worst": -453.12,
+    "spy_same_days_total": 5637.06
+   }
+  },
+  "All bets \u00b7 buy every alert": {
+   "Second sealed test (2023\u201324)": {
+    "trades": 61833,
+    "invested": 30916500.0,
+    "total_pnl": 116747.29,
+    "avg_pnl": 1.89,
+    "median_pnl": 1.64,
+    "win_share": 0.534,
+    "best": 1137.89,
+    "worst": -420.13,
+    "spy_same_days_total": 162915.76
+   },
+   "All periods": {
+    "trades": 275187,
+    "invested": 137593500.0,
+    "total_pnl": 490757.77,
+    "avg_pnl": 1.78,
+    "median_pnl": 0.75,
+    "win_share": 0.513,
+    "best": 7515.73,
+    "worst": -468.32,
+    "spy_same_days_total": 480525.01
+   },
+   "Practice year (rules chosen here)": {
+    "trades": 92754,
+    "invested": 46377000.0,
+    "total_pnl": 298742.92,
+    "avg_pnl": 3.22,
+    "median_pnl": 1.74,
+    "win_share": 0.531,
+    "best": 7515.73,
+    "worst": -468.32,
+    "spy_same_days_total": 167032.51
+   },
+   "Sealed test": {
+    "trades": 77681,
+    "invested": 38840500.0,
+    "total_pnl": 149120.23,
+    "avg_pnl": 1.92,
+    "median_pnl": -0.0,
+    "win_share": 0.5,
+    "best": 2012.58,
+    "worst": -433.69,
+    "spy_same_days_total": 134433.84
+   },
+   "Recent months (seen before testing)": {
+    "trades": 42919,
+    "invested": 21459500.0,
+    "total_pnl": -73852.67,
+    "avg_pnl": -1.72,
+    "median_pnl": -2.2,
+    "win_share": 0.467,
+    "best": 3604.76,
+    "worst": -453.12,
+    "spy_same_days_total": 16142.9
+   }
+  },
+  "Signals \u00b7 buy": {
+   "Second sealed test (2023\u201324)": {
+    "trades": 233,
+    "invested": 116500.0,
+    "total_pnl": 2527.08,
+    "avg_pnl": 10.85,
+    "median_pnl": 4.87,
+    "win_share": 0.562,
+    "best": 254.45,
+    "worst": -148.85,
+    "spy_same_days_total": 497.05
+   },
+   "All periods": {
+    "trades": 1667,
+    "invested": 833500.0,
+    "total_pnl": 9606.36,
+    "avg_pnl": 5.76,
+    "median_pnl": 2.05,
+    "win_share": 0.519,
+    "best": 472.71,
+    "worst": -383.08,
+    "spy_same_days_total": 2546.36
+   },
+   "Practice year (rules chosen here)": {
+    "trades": 488,
+    "invested": 244000.0,
+    "total_pnl": 3776.88,
+    "avg_pnl": 7.74,
+    "median_pnl": 3.81,
+    "win_share": 0.545,
+    "best": 353.98,
+    "worst": -192.18,
+    "spy_same_days_total": 788.28
+   },
+   "Sealed test": {
+    "trades": 628,
+    "invested": 314000.0,
+    "total_pnl": 6003.22,
+    "avg_pnl": 9.56,
+    "median_pnl": 3.82,
+    "win_share": 0.543,
+    "best": 472.71,
+    "worst": -383.08,
+    "spy_same_days_total": 1504.74
+   },
+   "Recent months (seen before testing)": {
+    "trades": 318,
+    "invested": 159000.0,
+    "total_pnl": -2700.81,
+    "avg_pnl": -8.49,
+    "median_pnl": -7.98,
+    "win_share": 0.403,
+    "best": 243.3,
+    "worst": -218.87,
+    "spy_same_days_total": -243.71
+   }
+  }
+ }
+}

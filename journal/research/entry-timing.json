@@ -1,0 +1,86 @@
+{
+ "note": "EXPLORATORY: buy at the signal day's close (proxy for an after-hours buy) instead of the next open?",
+ "skipped_no_close": 0,
+ "periods": {
+  "Recent months (seen before testing)": {
+   "trades": 332,
+   "next_open_vs_spy": -0.01505,
+   "same_close_vs_spy": -0.01525,
+   "difference": -0.00021,
+   "difference_range": [
+    -0.00426,
+    0.00405
+   ],
+   "beat_spy_next_open": 0.41,
+   "beat_spy_same_close": 0.41,
+   "gap_mean": 0.00079,
+   "gap_median": -0.00079,
+   "gap_up_share": 0.473,
+   "gap_over_5pct_either_way": 0.078
+  },
+  "All periods": {
+   "trades": 1681,
+   "next_open_vs_spy": 0.00835,
+   "same_close_vs_spy": 0.00935,
+   "difference": 0.001,
+   "difference_range": [
+    -0.00076,
+    0.00267
+   ],
+   "beat_spy_next_open": 0.507,
+   "beat_spy_same_close": 0.512,
+   "gap_mean": 0.00155,
+   "gap_median": 0.0009,
+   "gap_up_share": 0.519,
+   "gap_over_5pct_either_way": 0.075
+  },
+  "Sealed test": {
+   "trades": 628,
+   "next_open_vs_spy": 0.01433,
+   "same_close_vs_spy": 0.01602,
+   "difference": 0.0017,
+   "difference_range": [
+    -0.00102,
+    0.00446
+   ],
+   "beat_spy_next_open": 0.525,
+   "beat_spy_same_close": 0.54,
+   "gap_mean": 0.00221,
+   "gap_median": 0.00104,
+   "gap_up_share": 0.521,
+   "gap_over_5pct_either_way": 0.054
+  },
+  "Practice year (rules chosen here)": {
+   "trades": 488,
+   "next_open_vs_spy": 0.01225,
+   "same_close_vs_spy": 0.01461,
+   "difference": 0.00236,
+   "difference_range": [
+    -0.00075,
+    0.00563
+   ],
+   "beat_spy_next_open": 0.543,
+   "beat_spy_same_close": 0.541,
+   "gap_mean": 0.00252,
+   "gap_median": 0.00258,
+   "gap_up_share": 0.547,
+   "gap_over_5pct_either_way": 0.105
+  },
+  "Second sealed test (2023\u201324)": {
+   "trades": 233,
+   "next_open_vs_spy": 0.01743,
+   "same_close_vs_spy": 0.01538,
+   "difference": -0.00204,
+   "difference_range": [
+    -0.00616,
+    0.00189
+   ],
+   "beat_spy_next_open": 0.524,
+   "beat_spy_same_close": 0.519,
+   "gap_mean": -0.00115,
+   "gap_median": 0.0008,
+   "gap_up_share": 0.519,
+   "gap_over_5pct_either_way": 0.064
+  }
+ }
+}

@@ -1,0 +1,378 @@
+{
+ "note": "EXPLORATORY: did a signal's position against UW's gamma levels change how it did?",
+ "near_pct": 0.03,
+ "no_levels_or_close": 1174,
+ "periods": {
+  "Recent months (seen before testing)": {
+   "flip": {
+    "groups": {
+     "below": {
+      "trades": 43,
+      "mean_vs_spy": 0.00272,
+      "beat_spy": 0.442,
+      "range": [
+       -0.03188,
+       0.04067
+      ]
+     },
+     "above": {
+      "trades": 57,
+      "mean_vs_spy": 0.00303,
+      "beat_spy": 0.421,
+      "range": [
+       -0.02584,
+       0.03929
+      ]
+     }
+    },
+    "above_minus_below": [
+     -0.0428,
+     0.04058
+    ]
+   },
+   "call_wall": {
+    "groups": {
+     "far": {
+      "trades": 69,
+      "mean_vs_spy": 0.00352,
+      "beat_spy": 0.464,
+      "range": [
+       -0.03006,
+       0.04487
+      ]
+     },
+     "near": {
+      "trades": 32,
+      "mean_vs_spy": -0.00184,
+      "beat_spy": 0.344,
+      "range": [
+       -0.0333,
+       0.03344
+      ]
+     }
+    },
+    "near_minus_far": [
+     -0.06171,
+     0.0399
+    ]
+   },
+   "put_wall": {
+    "groups": {
+     "far": {
+      "trades": 46,
+      "mean_vs_spy": 0.00196,
+      "beat_spy": 0.391,
+      "range": [
+       -0.03672,
+       0.04934
+      ]
+     },
+     "near": {
+      "trades": 47,
+      "mean_vs_spy": 0.00074,
+      "beat_spy": 0.426,
+      "range": [
+       -0.0291,
+       0.03115
+      ]
+     },
+     "through": {
+      "trades": 1,
+      "mean_vs_spy": 0.03059,
+      "beat_spy": 1,
+      "range": null
+     }
+    },
+    "near_minus_far": [
+     -0.05097,
+     0.04866
+    ]
+   }
+  },
+  "All periods": {
+   "flip": {
+    "groups": {
+     "below": {
+      "trades": 146,
+      "mean_vs_spy": 0.01126,
+      "beat_spy": 0.534,
+      "range": [
+       -0.00533,
+       0.02635
+      ]
+     },
+     "above": {
+      "trades": 339,
+      "mean_vs_spy": 0.00826,
+      "beat_spy": 0.519,
+      "range": [
+       -0.00288,
+       0.02069
+      ]
+     }
+    },
+    "above_minus_below": [
+     -0.02068,
+     0.01356
+    ]
+   },
+   "call_wall": {
+    "groups": {
+     "far": {
+      "trades": 319,
+      "mean_vs_spy": 0.01455,
+      "beat_spy": 0.549,
+      "range": [
+       0.00277,
+       0.02778
+      ]
+     },
+     "near": {
+      "trades": 162,
+      "mean_vs_spy": -0.00187,
+      "beat_spy": 0.469,
+      "range": [
+       -0.01707,
+       0.01219
+      ]
+     },
+     "through": {
+      "trades": 5,
+      "mean_vs_spy": -0.00025,
+      "beat_spy": 0.6,
+      "range": [
+       -0.032,
+       0.03021
+      ]
+     }
+    },
+    "near_minus_far": [
+     -0.03447,
+     0.00127
+    ]
+   },
+   "put_wall": {
+    "groups": {
+     "far": {
+      "trades": 221,
+      "mean_vs_spy": 0.00095,
+      "beat_spy": 0.466,
+      "range": [
+       -0.01317,
+       0.01634
+      ]
+     },
+     "near": {
+      "trades": 242,
+      "mean_vs_spy": 0.01473,
+      "beat_spy": 0.558,
+      "range": [
+       0.00362,
+       0.02662
+      ]
+     },
+     "through": {
+      "trades": 10,
+      "mean_vs_spy": 0.01652,
+      "beat_spy": 0.7,
+      "range": [
+       -0.02223,
+       0.05057
+      ]
+     }
+    },
+    "near_minus_far": [
+     -0.00653,
+     0.03148
+    ]
+   }
+  },
+  "Sealed test": {
+   "flip": {
+    "groups": {
+     "below": {
+      "trades": 48,
+      "mean_vs_spy": 0.01082,
+      "beat_spy": 0.542,
+      "range": [
+       -0.01251,
+       0.03583
+      ]
+     },
+     "above": {
+      "trades": 141,
+      "mean_vs_spy": 0.01615,
+      "beat_spy": 0.56,
+      "range": [
+       -8e-05,
+       0.03033
+      ]
+     }
+    },
+    "above_minus_below": [
+     -0.02294,
+     0.03063
+    ]
+   },
+   "call_wall": {
+    "groups": {
+     "far": {
+      "trades": 120,
+      "mean_vs_spy": 0.01454,
+      "beat_spy": 0.55,
+      "range": [
+       -0.00282,
+       0.03221
+      ]
+     },
+     "near": {
+      "trades": 67,
+      "mean_vs_spy": 0.01614,
+      "beat_spy": 0.567,
+      "range": [
+       -0.00085,
+       0.03532
+      ]
+     },
+     "through": {
+      "trades": 2,
+      "mean_vs_spy": -0.01452,
+      "beat_spy": 0.5,
+      "range": null
+     }
+    },
+    "near_minus_far": [
+     -0.02342,
+     0.02507
+    ]
+   },
+   "put_wall": {
+    "groups": {
+     "far": {
+      "trades": 82,
+      "mean_vs_spy": -0.00168,
+      "beat_spy": 0.451,
+      "range": [
+       -0.01909,
+       0.01596
+      ]
+     },
+     "near": {
+      "trades": 100,
+      "mean_vs_spy": 0.02686,
+      "beat_spy": 0.63,
+      "range": [
+       0.00919,
+       0.04563
+      ]
+     },
+     "through": {
+      "trades": 6,
+      "mean_vs_spy": 0.01646,
+      "beat_spy": 0.667,
+      "range": [
+       -0.04568,
+       0.07938
+      ]
+     }
+    },
+    "near_minus_far": [
+     0.00398,
+     0.05355
+    ]
+   }
+  },
+  "Practice year (rules chosen here)": {
+   "flip": {
+    "groups": {
+     "above": {
+      "trades": 141,
+      "mean_vs_spy": 0.00248,
+      "beat_spy": 0.518,
+      "range": [
+       -0.01506,
+       0.02138
+      ]
+     },
+     "below": {
+      "trades": 55,
+      "mean_vs_spy": 0.01831,
+      "beat_spy": 0.6,
+      "range": [
+       -0.00556,
+       0.04002
+      ]
+     }
+    },
+    "above_minus_below": [
+     -0.04354,
+     0.01024
+    ]
+   },
+   "call_wall": {
+    "groups": {
+     "far": {
+      "trades": 130,
+      "mean_vs_spy": 0.02042,
+      "beat_spy": 0.592,
+      "range": [
+       0.00262,
+       0.03926
+      ]
+     },
+     "near": {
+      "trades": 63,
+      "mean_vs_spy": -0.02104,
+      "beat_spy": 0.429,
+      "range": [
+       -0.04438,
+       0.00116
+      ]
+     },
+     "through": {
+      "trades": 3,
+      "mean_vs_spy": 0.00927,
+      "beat_spy": 0.667,
+      "range": null
+     }
+    },
+    "near_minus_far": [
+     -0.06957,
+     -0.01415
+    ]
+   },
+   "put_wall": {
+    "groups": {
+     "near": {
+      "trades": 95,
+      "mean_vs_spy": 0.00887,
+      "beat_spy": 0.547,
+      "range": [
+       -0.00624,
+       0.0272
+      ]
+     },
+     "far": {
+      "trades": 93,
+      "mean_vs_spy": 0.00278,
+      "beat_spy": 0.516,
+      "range": [
+       -0.02322,
+       0.02777
+      ]
+     },
+     "through": {
+      "trades": 3,
+      "mean_vs_spy": 0.01197,
+      "beat_spy": 0.667,
+      "range": null
+     }
+    },
+    "near_minus_far": [
+     -0.02317,
+     0.03814
+    ]
+   }
+  }
+ }
+}

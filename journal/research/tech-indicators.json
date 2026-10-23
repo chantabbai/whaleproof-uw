@@ -1,0 +1,361 @@
+{
+ "note": "EXPLORATORY: did a signal stock's own RSI or 50-day trend change how the signal did?",
+ "rsi_n": 14,
+ "sma_n": 50,
+ "stretched_at": 70.0,
+ "washed_at": 30.0,
+ "under_50_bars": 51,
+ "periods": {
+  "Live (from Sep 30)": {
+   "rsi": {
+    "groups": {
+     "rest": {
+      "trades": 12,
+      "mean_vs_spy": -0.02262,
+      "beat_spy": 0.25,
+      "range": null
+     },
+     "stretched": {
+      "trades": 1,
+      "mean_vs_spy": -0.10046,
+      "beat_spy": 0,
+      "range": null
+     }
+    },
+    "stretched_minus_rest": null
+   },
+   "trend50": {
+    "groups": {
+     "with": {
+      "trades": 9,
+      "mean_vs_spy": -0.03478,
+      "beat_spy": 0.333,
+      "range": null
+     },
+     "against": {
+      "trades": 4,
+      "mean_vs_spy": -0.01472,
+      "beat_spy": 0,
+      "range": null
+     }
+    },
+    "with_minus_against": null
+   }
+  },
+  "All periods": {
+   "rsi": {
+    "groups": {
+     "rest": {
+      "trades": 1325,
+      "mean_vs_spy": 0.00737,
+      "beat_spy": 0.501,
+      "range": [
+       -0.00013,
+       0.01459
+      ]
+     },
+     "stretched": {
+      "trades": 362,
+      "mean_vs_spy": 0.00959,
+      "beat_spy": 0.522,
+      "range": [
+       -0.00447,
+       0.02222
+      ]
+     },
+     "washed (info)": {
+      "trades": 27,
+      "mean_vs_spy": 0.02943,
+      "beat_spy": 0.593,
+      "range": [
+       -0.01323,
+       0.07288
+      ]
+     }
+    },
+    "stretched_minus_rest": [
+     -0.01316,
+     0.0169
+    ]
+   },
+   "trend50": {
+    "groups": {
+     "with": {
+      "trades": 1114,
+      "mean_vs_spy": 0.00621,
+      "beat_spy": 0.508,
+      "range": [
+       -0.00183,
+       0.01417
+      ]
+     },
+     "against": {
+      "trades": 531,
+      "mean_vs_spy": 0.00545,
+      "beat_spy": 0.492,
+      "range": [
+       -0.00421,
+       0.01521
+      ]
+     }
+    },
+    "with_minus_against": [
+     -0.01163,
+     0.01191
+    ]
+   }
+  },
+  "Recent months": {
+   "rsi": {
+    "groups": {
+     "rest": {
+      "trades": 298,
+      "mean_vs_spy": -0.01369,
+      "beat_spy": 0.413,
+      "range": [
+       -0.02896,
+       0.0023
+      ]
+     },
+     "stretched": {
+      "trades": 31,
+      "mean_vs_spy": -0.01291,
+      "beat_spy": 0.387,
+      "range": [
+       -0.03518,
+       0.00852
+      ]
+     },
+     "washed (info)": {
+      "trades": 6,
+      "mean_vs_spy": 0.00233,
+      "beat_spy": 0.5,
+      "range": [
+       -0.03291,
+       0.04
+      ]
+     }
+    },
+    "stretched_minus_rest": [
+     -0.02635,
+     0.0243
+    ]
+   },
+   "trend50": {
+    "groups": {
+     "with": {
+      "trades": 180,
+      "mean_vs_spy": -0.01279,
+      "beat_spy": 0.433,
+      "range": [
+       -0.02808,
+       0.00495
+      ]
+     },
+     "against": {
+      "trades": 143,
+      "mean_vs_spy": -0.01566,
+      "beat_spy": 0.378,
+      "range": [
+       -0.03545,
+       0.00735
+      ]
+     }
+    },
+    "with_minus_against": [
+     -0.02463,
+     0.02886
+    ]
+   }
+  },
+  "Sealed test": {
+   "rsi": {
+    "groups": {
+     "rest": {
+      "trades": 493,
+      "mean_vs_spy": 0.01847,
+      "beat_spy": 0.542,
+      "range": [
+       0.00385,
+       0.03333
+      ]
+     },
+     "stretched": {
+      "trades": 134,
+      "mean_vs_spy": -0.00051,
+      "beat_spy": 0.47,
+      "range": [
+       -0.02545,
+       0.02298
+      ]
+     },
+     "washed (info)": {
+      "trades": 7,
+      "mean_vs_spy": 0.10316,
+      "beat_spy": 0.857,
+      "range": [
+       0.01927,
+       0.21196
+      ]
+     }
+    },
+    "stretched_minus_rest": [
+     -0.0469,
+     0.00919
+    ]
+   },
+   "trend50": {
+    "groups": {
+     "with": {
+      "trades": 418,
+      "mean_vs_spy": 0.01387,
+      "beat_spy": 0.533,
+      "range": [
+       -0.00093,
+       0.02887
+      ]
+     },
+     "against": {
+      "trades": 206,
+      "mean_vs_spy": 0.01246,
+      "beat_spy": 0.51,
+      "range": [
+       -0.00238,
+       0.02822
+      ]
+     }
+    },
+    "with_minus_against": [
+     -0.0173,
+     0.01936
+    ]
+   }
+  },
+  "Practice year (rules chosen here)": {
+   "rsi": {
+    "groups": {
+     "rest": {
+      "trades": 339,
+      "mean_vs_spy": 0.00686,
+      "beat_spy": 0.525,
+      "range": [
+       -0.00424,
+       0.01739
+      ]
+     },
+     "stretched": {
+      "trades": 147,
+      "mean_vs_spy": 0.0172,
+      "beat_spy": 0.578,
+      "range": [
+       -0.00252,
+       0.03665
+      ]
+     },
+     "washed (info)": {
+      "trades": 8,
+      "mean_vs_spy": -0.00275,
+      "beat_spy": 0.5,
+      "range": [
+       -0.09502,
+       0.08013
+      ]
+     }
+    },
+    "stretched_minus_rest": [
+     -0.01123,
+     0.03135
+    ]
+   },
+   "trend50": {
+    "groups": {
+     "with": {
+      "trades": 356,
+      "mean_vs_spy": 0.00422,
+      "beat_spy": 0.52,
+      "range": [
+       -0.00707,
+       0.01571
+      ]
+     },
+     "against": {
+      "trades": 118,
+      "mean_vs_spy": 0.01226,
+      "beat_spy": 0.602,
+      "range": [
+       -0.0026,
+       0.02929
+      ]
+     }
+    },
+    "with_minus_against": [
+     -0.02809,
+     0.01049
+    ]
+   }
+  },
+  "Second sealed test (2023\u201324)": {
+   "rsi": {
+    "groups": {
+     "rest": {
+      "trades": 183,
+      "mean_vs_spy": 0.0147,
+      "beat_spy": 0.508,
+      "range": [
+       -0.00054,
+       0.02943
+      ]
+     },
+     "stretched": {
+      "trades": 49,
+      "mean_vs_spy": 0.03089,
+      "beat_spy": 0.592,
+      "range": [
+       -0.00396,
+       0.07124
+      ]
+     },
+     "washed (info)": {
+      "trades": 6,
+      "mean_vs_spy": 0.01343,
+      "beat_spy": 0.5,
+      "range": [
+       -0.03729,
+       0.07137
+      ]
+     }
+    },
+    "stretched_minus_rest": [
+     -0.02205,
+     0.05706
+    ]
+   },
+   "trend50": {
+    "groups": {
+     "with": {
+      "trades": 151,
+      "mean_vs_spy": 0.01479,
+      "beat_spy": 0.51,
+      "range": [
+       -0.00402,
+       0.03344
+      ]
+     },
+     "against": {
+      "trades": 60,
+      "mean_vs_spy": 0.0196,
+      "beat_spy": 0.517,
+      "range": [
+       -0.00505,
+       0.04427
+      ]
+     }
+    },
+    "with_minus_against": [
+     -0.03574,
+     0.02539
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,4128 @@
+{
+  "meta": {
+    "end": "2025-09-30",
+    "start": "2024-10-01",
+    "weights": "simple rules"
+  },
+  "summary": {
+    "all": {
+      "plan_follow_return": {
+        "ci_high": null,
+        "ci_low": null,
+        "expectancy": null,
+        "hit_rate": null,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "profit_factor": null
+      },
+      "plan_return": {
+        "ci_high": null,
+        "ci_low": null,
+        "expectancy": null,
+        "hit_rate": null,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "profit_factor": null
+      },
+      "r1": {
+        "ci_high": 0.4798771666913842,
+        "ci_low": 0.47344918831761235,
+        "expectancy": -0.0009056526964286173,
+        "hit_rate": 0.47666221110727836,
+        "mean": -0.0009056526964286173,
+        "median": -0.001,
+        "n": 92768,
+        "profit_factor": 0.917961866076118
+      },
+      "r20": {
+        "ci_high": 0.5031702181088098,
+        "ci_low": 0.4967326932993086,
+        "expectancy": 0.0013201499704048368,
+        "hit_rate": 0.4999514536922164,
+        "mean": 0.0013201499704048368,
+        "median": -1.136925358380305e-05,
+        "n": 92695,
+        "profit_factor": 1.0221985250357186
+      },
+      "r5": {
+        "ci_high": 0.4954012946205646,
+        "ci_low": 0.4889666038235062,
+        "expectancy": -0.000689234234180277,
+        "hit_rate": 0.4921836255040214,
+        "mean": -0.000689234234180277,
+        "median": -0.0009331028205286076,
+        "n": 92754,
+        "profit_factor": 0.9757018427937272
+      },
+      "x5": {
+        "ci_high": 0.4903767926023722,
+        "ci_low": 0.4839434378071288,
+        "expectancy": -0.0008893864048895538,
+        "hit_rate": 0.48715958341419235,
+        "mean": -0.0008893864048895538,
+        "median": -0.0010000000000000009,
+        "n": 92754,
+        "profit_factor": 0.9656548959437821
+      }
+    },
+    "by_catalyst": {
+      "n/a": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4798771666913842,
+          "ci_low": 0.47344918831761235,
+          "expectancy": -0.0009056526964286173,
+          "hit_rate": 0.47666221110727836,
+          "mean": -0.0009056526964286173,
+          "median": -0.001,
+          "n": 92768,
+          "profit_factor": 0.917961866076118
+        },
+        "r20": {
+          "ci_high": 0.5031702181088098,
+          "ci_low": 0.4967326932993086,
+          "expectancy": 0.0013201499704048368,
+          "hit_rate": 0.4999514536922164,
+          "mean": 0.0013201499704048368,
+          "median": -1.136925358380305e-05,
+          "n": 92695,
+          "profit_factor": 1.0221985250357186
+        },
+        "r5": {
+          "ci_high": 0.4954012946205646,
+          "ci_low": 0.4889666038235062,
+          "expectancy": -0.000689234234180277,
+          "hit_rate": 0.4921836255040214,
+          "mean": -0.000689234234180277,
+          "median": -0.0009331028205286076,
+          "n": 92754,
+          "profit_factor": 0.9757018427937272
+        },
+        "x5": {
+          "ci_high": 0.4903767926023722,
+          "ci_low": 0.4839434378071288,
+          "expectancy": -0.0008893864048895538,
+          "hit_rate": 0.48715958341419235,
+          "mean": -0.0008893864048895538,
+          "median": -0.0010000000000000009,
+          "n": 92754,
+          "profit_factor": 0.9656548959437821
+        }
+      }
+    },
+    "by_check": {},
+    "by_direction": {
+      "bearish": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.47035016209379715,
+          "ci_low": 0.4610850931561788,
+          "expectancy": -0.001716585102572894,
+          "hit_rate": 0.46571467061834837,
+          "mean": -0.001716585102572894,
+          "median": -0.0013932497465439777,
+          "n": 44538,
+          "profit_factor": 0.8488369456611369
+        },
+        "r20": {
+          "ci_high": 0.45187012980251073,
+          "ci_low": 0.4426309889754866,
+          "expectancy": -0.03011610873694302,
+          "hit_rate": 0.44724600552821414,
+          "mean": -0.03011610873694302,
+          "median": -0.013187500000000019,
+          "n": 44499,
+          "profit_factor": 0.5970558560591075
+        },
+        "r5": {
+          "ci_high": 0.45540243537057107,
+          "ci_low": 0.44615999519097466,
+          "expectancy": -0.008426289681851206,
+          "hit_rate": 0.45077696937034045,
+          "mean": -0.008426289681851206,
+          "median": -0.005405401850418045,
+          "n": 44532,
+          "profit_factor": 0.7365470037020355
+        },
+        "x5": {
+          "ci_high": 0.4884072116600584,
+          "ci_low": 0.4791245571793564,
+          "expectancy": -0.00488389196250581,
+          "hit_rate": 0.48376448396658583,
+          "mean": -0.00488389196250581,
+          "median": -0.0010000000000000009,
+          "n": 44532,
+          "profit_factor": 0.8231515370814027
+        }
+      },
+      "bullish": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.49123342208817183,
+          "ci_low": 0.482312122747718,
+          "expectancy": -0.00015679705668460322,
+          "hit_rate": 0.48677171884719056,
+          "mean": -0.00015679705668460322,
+          "median": -0.0005523878381912253,
+          "n": 48230,
+          "profit_factor": 0.9854104204056106
+        },
+        "r20": {
+          "ci_high": 0.5530527561536976,
+          "ci_low": 0.5441674803542996,
+          "expectancy": 0.03034500838642011,
+          "hit_rate": 0.5486139928624783,
+          "mean": 0.03034500838642011,
+          "median": 0.012198095887174465,
+          "n": 48196,
+          "profit_factor": 1.6688121145182195
+        },
+        "r5": {
+          "ci_high": 0.534873690286015,
+          "ci_low": 0.5259650613595344,
+          "expectancy": 0.006455773297562117,
+          "hit_rate": 0.5304217991787981,
+          "mean": 0.006455773297562117,
+          "median": 0.0035263208888263184,
+          "n": 48222,
+          "profit_factor": 1.2579807498974849
+        },
+        "x5": {
+          "ci_high": 0.4947574001553883,
+          "ci_low": 0.48583391833805595,
+          "expectancy": 0.0027994552336108626,
+          "hit_rate": 0.4902948861515491,
+          "mean": 0.0027994552336108626,
+          "median": -0.0009210298959382857,
+          "n": 48222,
+          "profit_factor": 1.1151727548012358
+        }
+      }
+    },
+    "by_dte": {
+      "15\u201345": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48388246550694614,
+          "ci_low": 0.47164765419675747,
+          "expectancy": -0.0007480942520273765,
+          "hit_rate": 0.4777617243937678,
+          "mean": -0.0007480942520273765,
+          "median": -0.0008769230769229966,
+          "n": 25609,
+          "profit_factor": 0.9321860756643864
+        },
+        "r20": {
+          "ci_high": 0.5050136202663371,
+          "ci_low": 0.49275762692684183,
+          "expectancy": 0.001215297042361397,
+          "hit_rate": 0.49888545618082986,
+          "mean": 0.001215297042361397,
+          "median": -0.00025354565812396503,
+          "n": 25571,
+          "profit_factor": 1.0200302863100112
+        },
+        "r5": {
+          "ci_high": 0.5000125526608086,
+          "ci_low": 0.4877660605964769,
+          "expectancy": -0.0007419053819668479,
+          "hit_rate": 0.4938883898933885,
+          "mean": -0.0007419053819668479,
+          "median": -0.0006560914796663866,
+          "n": 25607,
+          "profit_factor": 0.9741087209736009
+        },
+        "x5": {
+          "ci_high": 0.49665395885705294,
+          "ci_low": 0.4844087485863448,
+          "expectancy": -0.0010138223443641285,
+          "hit_rate": 0.4905299332213848,
+          "mean": -0.0010138223443641285,
+          "median": -0.001,
+          "n": 25607,
+          "profit_factor": 0.9614162117739677
+        }
+      },
+      "46\u201390": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4856861526186394,
+          "ci_low": 0.4695331822624444,
+          "expectancy": -0.000755258884646075,
+          "hit_rate": 0.47760381211708647,
+          "mean": -0.000755258884646075,
+          "median": -0.001,
+          "n": 14690,
+          "profit_factor": 0.9256548527867701
+        },
+        "r20": {
+          "ci_high": 0.5084260674458647,
+          "ci_low": 0.4922546750884862,
+          "expectancy": -0.0002567515490799375,
+          "hit_rate": 0.5003404603023287,
+          "mean": -0.0002567515490799375,
+          "median": 0.00017344931819046703,
+          "n": 14686,
+          "profit_factor": 0.9954515463710184
+        },
+        "r5": {
+          "ci_high": 0.4967162048322475,
+          "ci_low": 0.480550089680484,
+          "expectancy": -0.0011603960415412485,
+          "hit_rate": 0.488630174291939,
+          "mean": -0.0011603960415412485,
+          "median": -0.0010821200794343113,
+          "n": 14688,
+          "profit_factor": 0.9560778190638188
+        },
+        "x5": {
+          "ci_high": 0.4918133344702339,
+          "ci_low": 0.4756516019881064,
+          "expectancy": -0.0015674291605535175,
+          "hit_rate": 0.4837282135076253,
+          "mean": -0.0015674291605535175,
+          "median": -0.0010000000000000009,
+          "n": 14688,
+          "profit_factor": 0.9351981931846783
+        }
+      },
+      ">90": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48230094005077606,
+          "ci_low": 0.4717375614686139,
+          "expectancy": -0.0008594814075071287,
+          "hit_rate": 0.47701668073709647,
+          "mean": -0.0008594814075071287,
+          "median": -0.001,
+          "n": 34351,
+          "profit_factor": 0.9195490106054672
+        },
+        "r20": {
+          "ci_high": 0.5044003960136626,
+          "ci_low": 0.4938230864862538,
+          "expectancy": 0.0021190693571500395,
+          "hit_rate": 0.4991116418606006,
+          "mean": 0.0021190693571500395,
+          "median": -0.00022909804471238273,
+          "n": 34333,
+          "profit_factor": 1.0362553757515818
+        },
+        "r5": {
+          "ci_high": 0.49697555899946144,
+          "ci_low": 0.48640184972172695,
+          "expectancy": 0.0001514862683474502,
+          "hit_rate": 0.4916877747692666,
+          "mean": 0.0001514862683474502,
+          "median": -0.001,
+          "n": 34347,
+          "profit_factor": 1.0055549673622686
+        },
+        "x5": {
+          "ci_high": 0.493481451427496,
+          "ci_low": 0.48290922891030397,
+          "expectancy": 6.93863388196118e-05,
+          "hit_rate": 0.4881940198561738,
+          "mean": 6.93863388196118e-05,
+          "median": -0.001,
+          "n": 34347,
+          "profit_factor": 1.0028032840983179
+        }
+      },
+      "\u226414": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48094796671734014,
+          "ci_low": 0.46640837702202914,
+          "expectancy": -0.0013378322550718989,
+          "hit_rate": 0.47367259079368584,
+          "mean": -0.0013378322550718989,
+          "median": -0.001105235907508383,
+          "n": 18118,
+          "profit_factor": 0.8924542645034395
+        },
+        "r20": {
+          "ci_high": 0.5100158666641775,
+          "ci_low": 0.49545107606947575,
+          "expectancy": 0.0012323438744660993,
+          "hit_rate": 0.5027340513670256,
+          "mean": 0.0012323438744660993,
+          "median": 0.0007205781142463072,
+          "n": 18105,
+          "profit_factor": 1.019825257773816
+        },
+        "r5": {
+          "ci_high": 0.5008772643061719,
+          "ci_low": 0.48631626469885103,
+          "expectancy": -0.0018269911021369454,
+          "hit_rate": 0.49359540636042404,
+          "mean": -0.0018269911021369454,
+          "median": -0.00080872667170817,
+          "n": 18112,
+          "profit_factor": 0.9422069384389608
+        },
+        "x5": {
+          "ci_high": 0.490496101281822,
+          "ci_low": 0.47594211266237585,
+          "expectancy": -0.001981780636937973,
+          "hit_rate": 0.4832155477031802,
+          "mean": -0.001981780636937973,
+          "median": -0.0010000000000000009,
+          "n": 18112,
+          "profit_factor": 0.9314539834029469
+        }
+      }
+    },
+    "by_issue": {
+      "ADR": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4906150816291577,
+          "ci_low": 0.464549351836421,
+          "expectancy": -0.0010708228653938437,
+          "hit_rate": 0.47756694449370457,
+          "mean": -0.0010708228653938437,
+          "median": -0.001,
+          "n": 5639,
+          "profit_factor": 0.8857736930998568
+        },
+        "r20": {
+          "ci_high": 0.5044491038044269,
+          "ci_low": 0.47836097542941153,
+          "expectancy": -0.0018222419434058793,
+          "hit_rate": 0.49139918425252704,
+          "mean": -0.0018222419434058793,
+          "median": -0.0023712718546452507,
+          "n": 5639,
+          "profit_factor": 0.9664502262983695
+        },
+        "r5": {
+          "ci_high": 0.5083492018295978,
+          "ci_low": 0.4822583672363139,
+          "expectancy": -0.0007789169583514341,
+          "hit_rate": 0.49530058521014364,
+          "mean": -0.0007789169583514341,
+          "median": -0.0005678478824545632,
+          "n": 5639,
+          "profit_factor": 0.9694557450365021
+        },
+        "x5": {
+          "ci_high": 0.5090582252652422,
+          "ci_low": 0.48296706922468263,
+          "expectancy": -0.0010503836448286289,
+          "hit_rate": 0.4960099308388012,
+          "mean": -0.0010503836448286289,
+          "median": -0.0004895778828103436,
+          "n": 5639,
+          "profit_factor": 0.9555798167888349
+        }
+      },
+      "Common Stock": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4840754136133868,
+          "ci_low": 0.47682646877548607,
+          "expectancy": -0.000793103038751797,
+          "hit_rate": 0.4804499123191583,
+          "mean": -0.000793103038751797,
+          "median": -0.001,
+          "n": 72992,
+          "profit_factor": 0.9320645055971227
+        },
+        "r20": {
+          "ci_high": 0.505939683841658,
+          "ci_low": 0.4986816390882481,
+          "expectancy": 0.0020936859573527557,
+          "hit_rate": 0.5023107831977948,
+          "mean": 0.0020936859573527557,
+          "median": 0.0007246335153779935,
+          "n": 72919,
+          "profit_factor": 1.0336053103951892
+        },
+        "r5": {
+          "ci_high": 0.49726955480021967,
+          "ci_low": 0.49001495351506513,
+          "expectancy": -0.0005046919340234948,
+          "hit_rate": 0.4936419194825838,
+          "mean": -0.0005046919340234948,
+          "median": -0.0007889137449852415,
+          "n": 72978,
+          "profit_factor": 0.9830439788410158
+        },
+        "x5": {
+          "ci_high": 0.494199946627405,
+          "ci_low": 0.4869460484607759,
+          "expectancy": -0.0007339580183842682,
+          "hit_rate": 0.49057250130176216,
+          "mean": -0.0007339580183842682,
+          "median": -0.000997329905121302,
+          "n": 72978,
+          "profit_factor": 0.9730176211093866
+        }
+      },
+      "ETF": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4644212533023837,
+          "ci_low": 0.44788864200753353,
+          "expectancy": -0.0014359566595846132,
+          "hit_rate": 0.4561428673886538,
+          "mean": -0.0014359566595846132,
+          "median": -0.001,
+          "n": 13943,
+          "profit_factor": 0.8282752251528814
+        },
+        "r20": {
+          "ci_high": 0.500087418033395,
+          "ci_low": 0.4834930938439321,
+          "expectancy": -0.0012492119347295362,
+          "hit_rate": 0.49178799397547157,
+          "mean": -0.0012492119347295362,
+          "median": -0.001448732331164492,
+          "n": 13943,
+          "profit_factor": 0.9732474667842813
+        },
+        "r5": {
+          "ci_high": 0.4912645205027448,
+          "ci_low": 0.4746775892864709,
+          "expectancy": -0.0016435219668576558,
+          "hit_rate": 0.4829663630495589,
+          "mean": -0.0016435219668576558,
+          "median": -0.001219635405227292,
+          "n": 13943,
+          "profit_factor": 0.9259844962194053
+        },
+        "x5": {
+          "ci_high": 0.4734673907449119,
+          "ci_low": 0.45691111158209524,
+          "expectancy": -0.001645889647336728,
+          "hit_rate": 0.46517966004446676,
+          "mean": -0.001645889647336728,
+          "median": -0.0010000000000000009,
+          "n": 13943,
+          "profit_factor": 0.9171867360532814
+        }
+      },
+      "Structured Product": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.5952572144351097,
+          "ci_low": 0.40474278556489024,
+          "expectancy": 0.0006618806816555037,
+          "hit_rate": 0.5,
+          "mean": 0.0006618806816555037,
+          "median": 0.0001609824923551337,
+          "n": 102,
+          "profit_factor": 1.0403102906131139
+        },
+        "r20": {
+          "ci_high": 0.5379313036821732,
+          "ci_low": 0.3486917254481499,
+          "expectancy": -0.025793110622564598,
+          "hit_rate": 0.4411764705882353,
+          "mean": -0.025793110622564598,
+          "median": -0.026415604644576596,
+          "n": 102,
+          "profit_factor": 0.7411455309720674
+        },
+        "r5": {
+          "ci_high": 0.5952572144351097,
+          "ci_low": 0.40474278556489024,
+          "expectancy": -0.0023582403168956063,
+          "hit_rate": 0.5,
+          "mean": -0.0023582403168956063,
+          "median": -0.000907523191903902,
+          "n": 102,
+          "profit_factor": 0.9437915949162939
+        },
+        "x5": {
+          "ci_high": 0.5952572144351097,
+          "ci_low": 0.40474278556489024,
+          "expectancy": -0.0026023847531640096,
+          "hit_rate": 0.5,
+          "mean": -0.0026023847531640096,
+          "median": 6.01675980445031e-05,
+          "n": 102,
+          "profit_factor": 0.9501721315243407
+        }
+      },
+      "Unit": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.6001034506049849,
+          "ci_low": 0.39989654939501507,
+          "expectancy": -0.0014457643989513177,
+          "hit_rate": 0.5,
+          "mean": -0.0014457643989513177,
+          "median": 0.0003755931983283065,
+          "n": 92,
+          "profit_factor": 0.8417890981430071
+        },
+        "r20": {
+          "ci_high": 0.5580039655873659,
+          "ci_low": 0.35852497382933834,
+          "expectancy": 0.00028366076926124984,
+          "hit_rate": 0.45652173913043476,
+          "mean": 0.00028366076926124984,
+          "median": -0.002839756340733467,
+          "n": 92,
+          "profit_factor": 1.012685799940539
+        },
+        "r5": {
+          "ci_high": 0.6312005369470985,
+          "ci_low": 0.43140275849037324,
+          "expectancy": 0.004898432917093109,
+          "hit_rate": 0.532608695652174,
+          "mean": 0.004898432917093109,
+          "median": 0.0023037175087032855,
+          "n": 92,
+          "profit_factor": 1.3843491021124392
+        },
+        "x5": {
+          "ci_high": 0.6517035993747023,
+          "ci_low": 0.45263522635441744,
+          "expectancy": 0.002237365623356856,
+          "hit_rate": 0.5543478260869565,
+          "mean": 0.002237365623356856,
+          "median": 0.002461434467202817,
+          "n": 92,
+          "profit_factor": 1.1992585453962494
+        }
+      }
+    },
+    "by_ivr": {
+      "n/a": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4798771666913842,
+          "ci_low": 0.47344918831761235,
+          "expectancy": -0.0009056526964286173,
+          "hit_rate": 0.47666221110727836,
+          "mean": -0.0009056526964286173,
+          "median": -0.001,
+          "n": 92768,
+          "profit_factor": 0.917961866076118
+        },
+        "r20": {
+          "ci_high": 0.5031702181088098,
+          "ci_low": 0.4967326932993086,
+          "expectancy": 0.0013201499704048368,
+          "hit_rate": 0.4999514536922164,
+          "mean": 0.0013201499704048368,
+          "median": -1.136925358380305e-05,
+          "n": 92695,
+          "profit_factor": 1.0221985250357186
+        },
+        "r5": {
+          "ci_high": 0.4954012946205646,
+          "ci_low": 0.4889666038235062,
+          "expectancy": -0.000689234234180277,
+          "hit_rate": 0.4921836255040214,
+          "mean": -0.000689234234180277,
+          "median": -0.0009331028205286076,
+          "n": 92754,
+          "profit_factor": 0.9757018427937272
+        },
+        "x5": {
+          "ci_high": 0.4903767926023722,
+          "ci_low": 0.4839434378071288,
+          "expectancy": -0.0008893864048895538,
+          "hit_rate": 0.48715958341419235,
+          "mean": -0.0008893864048895538,
+          "median": -0.0010000000000000009,
+          "n": 92754,
+          "profit_factor": 0.9656548959437821
+        }
+      }
+    },
+    "by_label": {
+      "NOISE": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4807875695471686,
+          "ci_low": 0.47353846353271445,
+          "expectancy": -0.0007694505332744608,
+          "hit_rate": 0.4771618138948292,
+          "mean": -0.0007694505332744608,
+          "median": -0.001,
+          "n": 72948,
+          "profit_factor": 0.9278728532413506
+        },
+        "r20": {
+          "ci_high": 0.49881414600272783,
+          "ci_low": 0.49155461805187955,
+          "expectancy": -0.0007216272056479469,
+          "hit_rate": 0.495184128203721,
+          "mean": -0.0007216272056479469,
+          "median": -0.0011640213252944722,
+          "n": 72884,
+          "profit_factor": 0.987852640826178
+        },
+        "r5": {
+          "ci_high": 0.4940789052221473,
+          "ci_low": 0.4868229027934053,
+          "expectancy": -0.0009279376456735065,
+          "hit_rate": 0.4904504010420237,
+          "mean": -0.0009279376456735065,
+          "median": -0.001,
+          "n": 72935,
+          "profit_factor": 0.9666974239525877
+        },
+        "x5": {
+          "ci_high": 0.49202207196129594,
+          "ci_low": 0.4847667011688768,
+          "expectancy": -0.0009244137738818522,
+          "hit_rate": 0.48839377527935834,
+          "mean": -0.0009244137738818522,
+          "median": -0.001,
+          "n": 72935,
+          "profit_factor": 0.9635823678790422
+        }
+      },
+      "PURE": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4774939376609543,
+          "ci_low": 0.4622278385159421,
+          "expectancy": -0.0018317599288598374,
+          "hit_rate": 0.4698538367844093,
+          "mean": -0.0018317599288598374,
+          "median": -0.0012792553670107334,
+          "n": 16420,
+          "profit_factor": 0.8531842051692524
+        },
+        "r20": {
+          "ci_high": 0.5169990092175942,
+          "ci_low": 0.5017035775926251,
+          "expectancy": 0.002831111529259672,
+          "hit_rate": 0.5093534824203279,
+          "mean": 0.002831111529259672,
+          "median": 0.0027974683544304,
+          "n": 16411,
+          "profit_factor": 1.0457393294794113
+        },
+        "r5": {
+          "ci_high": 0.49884728541218126,
+          "ci_low": 0.4835552727419449,
+          "expectancy": -0.0013569791937382226,
+          "hit_rate": 0.49119922041537245,
+          "mean": -0.0013569791937382226,
+          "median": -0.001,
+          "n": 16419,
+          "profit_factor": 0.9557458775739316
+        },
+        "x5": {
+          "ci_high": 0.48544495377981794,
+          "ci_low": 0.4701656513909706,
+          "expectancy": -0.00155029420338812,
+          "hit_rate": 0.47780010962908825,
+          "mean": -0.00155029420338812,
+          "median": -0.0010000000000000009,
+          "n": 16419,
+          "profit_factor": 0.9444195370054708
+        }
+      },
+      "PUT_SALE": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.5156221852338417,
+          "ci_low": 0.48202752913594576,
+          "expectancy": 0.0006446429973217442,
+          "hit_rate": 0.4988235294117647,
+          "mean": 0.0006446429973217442,
+          "median": -0.00018274534534468059,
+          "n": 3400,
+          "profit_factor": 1.0534175768769298
+        },
+        "r20": {
+          "ci_high": 0.5733895371471022,
+          "ci_low": 0.5400117445106577,
+          "expectancy": 0.03779559042836495,
+          "hit_rate": 0.5567647058823529,
+          "mean": 0.03779559042836495,
+          "median": 0.017717581601936927,
+          "n": 3400,
+          "profit_factor": 1.7692745432631323
+        },
+        "r5": {
+          "ci_high": 0.5508374099919373,
+          "ci_low": 0.5173208732842292,
+          "expectancy": 0.00765592394471402,
+          "hit_rate": 0.5341176470588235,
+          "mean": 0.00765592394471402,
+          "median": 0.00516030375304466,
+          "n": 3400,
+          "profit_factor": 1.2730770858286802
+        },
+        "x5": {
+          "ci_high": 0.5226719273937385,
+          "ci_low": 0.4890795007573246,
+          "expectancy": 0.003053603683640225,
+          "hit_rate": 0.5058823529411764,
+          "mean": 0.003053603683640225,
+          "median": 0.0007925656452173473,
+          "n": 3400,
+          "profit_factor": 1.1121342111160715
+        }
+      }
+    },
+    "by_month": {
+      "2024-10": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.47760574744477063,
+          "ci_low": 0.45466149803040606,
+          "expectancy": -0.0010245700372245117,
+          "hit_rate": 0.46611570247933887,
+          "mean": -0.0010245700372245117,
+          "median": -0.001,
+          "n": 7260,
+          "profit_factor": 0.8819926933276013
+        },
+        "r20": {
+          "ci_high": 0.5094344384923765,
+          "ci_low": 0.4864343780348252,
+          "expectancy": 0.0031443801419917777,
+          "hit_rate": 0.4979333149627997,
+          "mean": 0.0031443801419917777,
+          "median": -0.00032125395455850827,
+          "n": 7258,
+          "profit_factor": 1.0480679687222012
+        },
+        "r5": {
+          "ci_high": 0.4974518507679982,
+          "ci_low": 0.47446383638024575,
+          "expectancy": -0.0012534744251084936,
+          "hit_rate": 0.4859504132231405,
+          "mean": -0.0012534744251084936,
+          "median": -0.001114531564855136,
+          "n": 7260,
+          "profit_factor": 0.9483657249476102
+        },
+        "x5": {
+          "ci_high": 0.4887714135471912,
+          "ci_low": 0.4657980803690859,
+          "expectancy": -0.001722081483658222,
+          "hit_rate": 0.4772727272727273,
+          "mean": -0.001722081483658222,
+          "median": -0.0011773540217969725,
+          "n": 7260,
+          "profit_factor": 0.9260680996137182
+        }
+      },
+      "2024-11": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.49484847162644074,
+          "ci_low": 0.47150989191717685,
+          "expectancy": -0.0005985751595060097,
+          "hit_rate": 0.4831700042607584,
+          "mean": -0.0005985751595060097,
+          "median": -0.0008259355961707229,
+          "n": 7041,
+          "profit_factor": 0.9468117140962183
+        },
+        "r20": {
+          "ci_high": 0.5207607531704338,
+          "ci_low": 0.49741114893480376,
+          "expectancy": 0.004726244486427649,
+          "hit_rate": 0.509090909090909,
+          "mean": 0.004726244486427649,
+          "median": 0.0019380134402894886,
+          "n": 7040,
+          "profit_factor": 1.08531680642206
+        },
+        "r5": {
+          "ci_high": 0.499037849638717,
+          "ci_low": 0.4756918489961871,
+          "expectancy": -0.0002637421724321067,
+          "hit_rate": 0.48735795454545455,
+          "mean": -0.0002637421724321067,
+          "median": -0.0013060086045929,
+          "n": 7040,
+          "profit_factor": 0.9914903489900181
+        },
+        "x5": {
+          "ci_high": 0.4979014047478064,
+          "ci_low": 0.4745568061239429,
+          "expectancy": -0.00030275803804937136,
+          "hit_rate": 0.4862215909090909,
+          "mean": -0.00030275803804937136,
+          "median": -0.0010000000000000009,
+          "n": 7040,
+          "profit_factor": 0.9896611015983416
+        }
+      },
+      "2024-12": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4885054907685588,
+          "ci_low": 0.4632563786725787,
+          "expectancy": -0.0011131152139102463,
+          "hit_rate": 0.47586551264980026,
+          "mean": -0.0011131152139102463,
+          "median": -0.0009773417319979263,
+          "n": 6008,
+          "profit_factor": 0.9079405651350141
+        },
+        "r20": {
+          "ci_high": 0.5006592872296688,
+          "ci_low": 0.4753879858721373,
+          "expectancy": -0.0030336033038388947,
+          "hit_rate": 0.48801597869507324,
+          "mean": -0.0030336033038388947,
+          "median": -0.002674097292444665,
+          "n": 6008,
+          "profit_factor": 0.937067301426403
+        },
+        "r5": {
+          "ci_high": 0.4963313946427628,
+          "ci_low": 0.4710662826346956,
+          "expectancy": -0.002268933756108719,
+          "hit_rate": 0.4836884154460719,
+          "mean": -0.002268933756108719,
+          "median": -0.0020746264679233897,
+          "n": 6008,
+          "profit_factor": 0.9163595656057624
+        },
+        "x5": {
+          "ci_high": 0.49250208428087305,
+          "ci_low": 0.4672440274596623,
+          "expectancy": -0.0018422865562201284,
+          "hit_rate": 0.4798601864181092,
+          "mean": -0.0018422865562201284,
+          "median": -0.0011621772115144036,
+          "n": 6008,
+          "profit_factor": 0.9254341586485234
+        }
+      },
+      "2025-01": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4887701238298302,
+          "ci_low": 0.4653177854276772,
+          "expectancy": -0.001291206685851855,
+          "hit_rate": 0.47703129486075224,
+          "mean": -0.001291206685851855,
+          "median": -0.001,
+          "n": 6966,
+          "profit_factor": 0.8774147165288724
+        },
+        "r20": {
+          "ci_high": 0.5012596335379843,
+          "ci_low": 0.47778094642582086,
+          "expectancy": -0.0026230892963830885,
+          "hit_rate": 0.4895145073254812,
+          "mean": -0.0026230892963830885,
+          "median": -0.003084557940510934,
+          "n": 6962,
+          "profit_factor": 0.9526778735418265
+        },
+        "r5": {
+          "ci_high": 0.5042765321969895,
+          "ci_low": 0.4808020383117004,
+          "expectancy": -0.0019292207934600556,
+          "hit_rate": 0.49253517082974446,
+          "mean": -0.0019292207934600556,
+          "median": -0.0007434799321575638,
+          "n": 6966,
+          "profit_factor": 0.9318953205704844
+        },
+        "x5": {
+          "ci_high": 0.49724261718999396,
+          "ci_low": 0.47377537552880755,
+          "expectancy": -0.001907170614012505,
+          "hit_rate": 0.48550100488084985,
+          "mean": -0.001907170614012505,
+          "median": -0.0010000000000000009,
+          "n": 6966,
+          "profit_factor": 0.9274613873240173
+        }
+      },
+      "2025-02": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.496929267807082,
+          "ci_low": 0.475074659705935,
+          "expectancy": -0.0009348167289700504,
+          "hit_rate": 0.48599526951325783,
+          "mean": -0.0009348167289700504,
+          "median": -0.000771140862798946,
+          "n": 8033,
+          "profit_factor": 0.923629858819697
+        },
+        "r20": {
+          "ci_high": 0.5004100545203781,
+          "ci_low": 0.4785408317444601,
+          "expectancy": -0.004965833165265375,
+          "hit_rate": 0.4894704049844237,
+          "mean": -0.004965833165265375,
+          "median": -0.003735250541351819,
+          "n": 8025,
+          "profit_factor": 0.9256820428677571
+        },
+        "r5": {
+          "ci_high": 0.5047091117032794,
+          "ci_low": 0.48284354305655564,
+          "expectancy": -0.0009001461656542379,
+          "hit_rate": 0.4937733499377335,
+          "mean": -0.0009001461656542379,
+          "median": -0.0013094597656038145,
+          "n": 8030,
+          "profit_factor": 0.9721671668020311
+        },
+        "x5": {
+          "ci_high": 0.5015962159922935,
+          "ci_low": 0.479732766147459,
+          "expectancy": -0.000746809189549737,
+          "hit_rate": 0.49066002490660027,
+          "mean": -0.000746809189549737,
+          "median": -0.001,
+          "n": 8030,
+          "profit_factor": 0.9740732315340886
+        }
+      },
+      "2025-03": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4888287829213581,
+          "ci_low": 0.46702352449499784,
+          "expectancy": -0.0010766612774107166,
+          "hit_rate": 0.47791563275434246,
+          "mean": -0.0010766612774107166,
+          "median": -0.001,
+          "n": 8060,
+          "profit_factor": 0.8977719213396341
+        },
+        "r20": {
+          "ci_high": 0.5045878720630648,
+          "ci_low": 0.48276306994948665,
+          "expectancy": -0.003867742823983917,
+          "hit_rate": 0.4936724565756824,
+          "mean": -0.003867742823983917,
+          "median": -0.0017588257322936332,
+          "n": 8060,
+          "profit_factor": 0.9300491957216591
+        },
+        "r5": {
+          "ci_high": 0.5017346678914492,
+          "ci_low": 0.4799117969895077,
+          "expectancy": -0.0015085883745403707,
+          "hit_rate": 0.49081885856079405,
+          "mean": -0.0015085883745403707,
+          "median": -0.001,
+          "n": 8060,
+          "profit_factor": 0.9495584313705815
+        },
+        "x5": {
+          "ci_high": 0.49714398478619537,
+          "ci_low": 0.4753257125352399,
+          "expectancy": -0.0014421975686375525,
+          "hit_rate": 0.48622828784119104,
+          "mean": -0.0014421975686375525,
+          "median": -0.0010000000000000009,
+          "n": 8060,
+          "profit_factor": 0.9401521321889429
+        }
+      },
+      "2025-04": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.49330720687329926,
+          "ci_low": 0.47214500223383454,
+          "expectancy": -0.000733197296102395,
+          "hit_rate": 0.48271835590845397,
+          "mean": -0.000733197296102395,
+          "median": -0.0010563360739499475,
+          "n": 8564,
+          "profit_factor": 0.9578731044047584
+        },
+        "r20": {
+          "ci_high": 0.5205841162516661,
+          "ci_low": 0.49939989280139396,
+          "expectancy": 0.004677492897893548,
+          "hit_rate": 0.5099964924587864,
+          "mean": 0.004677492897893548,
+          "median": 0.0041173991571342725,
+          "n": 8553,
+          "profit_factor": 1.062041048098794
+        },
+        "r5": {
+          "ci_high": 0.5096536828045162,
+          "ci_low": 0.48847886903911275,
+          "expectancy": -0.0009690528011995589,
+          "hit_rate": 0.49906585707613266,
+          "mean": -0.0009690528011995589,
+          "median": -0.00013478234836239358,
+          "n": 8564,
+          "profit_factor": 0.9700400505772981
+        },
+        "x5": {
+          "ci_high": 0.5021824125231871,
+          "ci_low": 0.48101055406947263,
+          "expectancy": -0.001405550798504992,
+          "hit_rate": 0.49159271368519386,
+          "mean": -0.001405550798504992,
+          "median": -0.0010000000000000009,
+          "n": 8564,
+          "profit_factor": 0.9437334924464101
+        }
+      },
+      "2025-05": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48443871532571087,
+          "ci_low": 0.46212109940249785,
+          "expectancy": -0.0006819687193520845,
+          "hit_rate": 0.47326655392220635,
+          "mean": -0.0006819687193520845,
+          "median": -0.0009414691249632892,
+          "n": 7687,
+          "profit_factor": 0.9275726611951677
+        },
+        "r20": {
+          "ci_high": 0.5143738699418104,
+          "ci_low": 0.4920073008847891,
+          "expectancy": 0.0042733392011567424,
+          "hit_rate": 0.5031921824104234,
+          "mean": 0.0042733392011567424,
+          "median": 0.0008923465096720715,
+          "n": 7675,
+          "profit_factor": 1.0817269596769703
+        },
+        "r5": {
+          "ci_high": 0.5033063071987097,
+          "ci_low": 0.48095660179397903,
+          "expectancy": 0.0005361990038178344,
+          "hit_rate": 0.49212752114508784,
+          "mean": 0.0005361990038178344,
+          "median": -0.0007248968363137145,
+          "n": 7685,
+          "profit_factor": 1.0209847144516164
+        },
+        "x5": {
+          "ci_high": 0.49640971168520165,
+          "ci_low": 0.47406698535066905,
+          "expectancy": -2.244639166500235e-05,
+          "hit_rate": 0.4852309694209499,
+          "mean": -2.244639166500235e-05,
+          "median": -0.0010000000000000009,
+          "n": 7685,
+          "profit_factor": 0.9990483170117624
+        }
+      },
+      "2025-06": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4861496180789135,
+          "ci_low": 0.4627250635406724,
+          "expectancy": -0.001127031491145115,
+          "hit_rate": 0.4744232698094283,
+          "mean": -0.001127031491145115,
+          "median": -0.001,
+          "n": 6979,
+          "profit_factor": 0.8825654707071786
+        },
+        "r20": {
+          "ci_high": 0.5145348953921759,
+          "ci_low": 0.4910598379611109,
+          "expectancy": 0.0038453836495392617,
+          "hit_rate": 0.5027989091431032,
+          "mean": 0.0038453836495392617,
+          "median": 0.0007537706068047054,
+          "n": 6967,
+          "profit_factor": 1.0731642363815828
+        },
+        "r5": {
+          "ci_high": 0.5044939892569437,
+          "ci_low": 0.4810378411745045,
+          "expectancy": -0.0006597231350380323,
+          "hit_rate": 0.492761932062491,
+          "mean": -0.0006597231350380323,
+          "median": -0.0007743491382957704,
+          "n": 6977,
+          "profit_factor": 0.9733112358112659
+        },
+        "x5": {
+          "ci_high": 0.4983312904719653,
+          "ci_low": 0.4748811084456665,
+          "expectancy": -0.001270750066889139,
+          "hit_rate": 0.4865988247097606,
+          "mean": -0.001270750066889139,
+          "median": -0.0010000000000000009,
+          "n": 6977,
+          "profit_factor": 0.9465527478710428
+        }
+      },
+      "2025-07": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4879478557286815,
+          "ci_low": 0.4666237021096249,
+          "expectancy": -0.0008280924385965609,
+          "hit_rate": 0.4772754242316364,
+          "mean": -0.0008280924385965609,
+          "median": -0.000863032461306589,
+          "n": 8427,
+          "profit_factor": 0.9157777013157027
+        },
+        "r20": {
+          "ci_high": 0.5130571243666961,
+          "ci_low": 0.49169468754670453,
+          "expectancy": 0.0011558457427512667,
+          "hit_rate": 0.5023769907297362,
+          "mean": 0.0011558457427512667,
+          "median": 0.0006462471260860201,
+          "n": 8414,
+          "profit_factor": 1.023364912553827
+        },
+        "r5": {
+          "ci_high": 0.5079457912897051,
+          "ci_low": 0.4865961089757201,
+          "expectancy": -0.0005681750094842817,
+          "hit_rate": 0.49726970560303896,
+          "mean": -0.0005681750094842817,
+          "median": -0.00022479969203337193,
+          "n": 8424,
+          "profit_factor": 0.9778586185455914
+        },
+        "x5": {
+          "ci_high": 0.5047415313086187,
+          "ci_low": 0.4833930344857836,
+          "expectancy": -0.0007737281402485862,
+          "hit_rate": 0.4940645773979107,
+          "mean": -0.0007737281402485862,
+          "median": -0.0004990411131294277,
+          "n": 8424,
+          "profit_factor": 0.9689982325517609
+        }
+      },
+      "2025-08": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4880824003245267,
+          "ci_low": 0.4665827574957047,
+          "expectancy": -0.0006544522792633283,
+          "hit_rate": 0.4773220747889023,
+          "mean": -0.0006544522792633283,
+          "median": -0.0009719780025513316,
+          "n": 8290,
+          "profit_factor": 0.934258829771133
+        },
+        "r20": {
+          "ci_high": 0.5203569739795331,
+          "ci_low": 0.49883007069620927,
+          "expectancy": 0.005291498656989044,
+          "hit_rate": 0.5095979717493662,
+          "mean": 0.005291498656989044,
+          "median": 0.0023461436522660426,
+          "n": 8283,
+          "profit_factor": 1.0936214594021778
+        },
+        "r5": {
+          "ci_high": 0.5032231746344572,
+          "ci_low": 0.48169994824850815,
+          "expectancy": 5.537803589335631e-05,
+          "hit_rate": 0.4924580668516954,
+          "mean": 5.537803589335631e-05,
+          "median": -0.001,
+          "n": 8287,
+          "profit_factor": 1.00221805835996
+        },
+        "x5": {
+          "ci_high": 0.49815514596048116,
+          "ci_low": 0.47663631549983676,
+          "expectancy": -0.0002586562878660961,
+          "hit_rate": 0.48738988777603476,
+          "mean": -0.0002586562878660961,
+          "median": -0.001,
+          "n": 8287,
+          "profit_factor": 0.9893272085855597
+        }
+      },
+      "2025-09": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.47902233278076534,
+          "ci_low": 0.4589062035288626,
+          "expectancy": -0.0009206110413695411,
+          "hit_rate": 0.46895165555908175,
+          "mean": -0.0009206110413695411,
+          "median": -0.00115543236101756,
+          "n": 9453,
+          "profit_factor": 0.9119217003265039
+        },
+        "r20": {
+          "ci_high": 0.5098675486210408,
+          "ci_low": 0.4897093429570876,
+          "expectancy": 0.0021840477702483136,
+          "hit_rate": 0.4997883597883598,
+          "mean": 0.0021840477702483136,
+          "median": -3.35903992210165e-05,
+          "n": 9450,
+          "profit_factor": 1.029752258319913
+        },
+        "r5": {
+          "ci_high": 0.5042080434040209,
+          "ci_low": 0.4840544225761642,
+          "expectancy": 0.0006975980938046955,
+          "hit_rate": 0.49412884798476675,
+          "mean": 0.0006975980938046955,
+          "median": -0.0006982498491249203,
+          "n": 9453,
+          "profit_factor": 1.021506213374211
+        },
+        "x5": {
+          "ci_high": 0.500823217989203,
+          "ci_low": 0.48067166080838614,
+          "expectancy": 0.0004074273953679836,
+          "hit_rate": 0.49074367925526285,
+          "mean": 0.0004074273953679836,
+          "median": -0.0008247934721398176,
+          "n": 9453,
+          "profit_factor": 1.0129506830992396
+        }
+      }
+    },
+    "by_premium": {
+      "$100K\u2013250K": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.47985055668028376,
+          "ci_low": 0.471789019060022,
+          "expectancy": -0.0009087926113898643,
+          "hit_rate": 0.4758182126505002,
+          "mean": -0.0009087926113898643,
+          "median": -0.001,
+          "n": 58970,
+          "profit_factor": 0.9181953583726349
+        },
+        "r20": {
+          "ci_high": 0.5053951016971968,
+          "ci_low": 0.4973204521070075,
+          "expectancy": 0.0017171576799317827,
+          "hit_rate": 0.5013578654355353,
+          "mean": 0.0017171576799317827,
+          "median": 0.0004259316642633579,
+          "n": 58916,
+          "profit_factor": 1.028775655445007
+        },
+        "r5": {
+          "ci_high": 0.49631018113824943,
+          "ci_low": 0.48823941017588424,
+          "expectancy": -0.0007020408865416535,
+          "hit_rate": 0.492274292304822,
+          "mean": -0.0007020408865416535,
+          "median": -0.0008970840480274625,
+          "n": 58959,
+          "profit_factor": 0.9752224580281628
+        },
+        "x5": {
+          "ci_high": 0.4921543640991313,
+          "ci_low": 0.4840849086024069,
+          "expectancy": -0.000951550813528839,
+          "hit_rate": 0.4881188622602147,
+          "mean": -0.000951550813528839,
+          "median": -0.0010000000000000009,
+          "n": 58959,
+          "profit_factor": 0.9635474934446345
+        }
+      },
+      "$1M\u20135M": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48868770417750074,
+          "ci_low": 0.46025573730797,
+          "expectancy": -0.0006282198482324318,
+          "hit_rate": 0.4744510135135135,
+          "mean": -0.0006282198482324318,
+          "median": -0.000880789214858623,
+          "n": 4736,
+          "profit_factor": 0.9361587873120975
+        },
+        "r20": {
+          "ci_high": 0.49247804616725266,
+          "ci_low": 0.4640238773768117,
+          "expectancy": -0.004315007954897793,
+          "hit_rate": 0.47823330515638207,
+          "mean": -0.004315007954897793,
+          "median": -0.005408815644135533,
+          "n": 4732,
+          "profit_factor": 0.9235235286432979
+        },
+        "r5": {
+          "ci_high": 0.4963956404166928,
+          "ci_low": 0.46794163559607793,
+          "expectancy": -0.0006871745254263847,
+          "hit_rate": 0.48215417106652586,
+          "mean": -0.0006871745254263847,
+          "median": -0.0017879832553558952,
+          "n": 4735,
+          "profit_factor": 0.9735263381584236
+        },
+        "x5": {
+          "ci_high": 0.4784313279157916,
+          "ci_low": 0.45003220207432254,
+          "expectancy": -0.0006781095716244637,
+          "hit_rate": 0.46420274551214363,
+          "mean": -0.0006781095716244637,
+          "median": -0.0010000000000000009,
+          "n": 4735,
+          "profit_factor": 0.9696795766019487
+        }
+      },
+      "$250K\u20131M": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48481780889551124,
+          "ci_low": 0.4732795131880096,
+          "expectancy": -0.0009451508607929996,
+          "hit_rate": 0.47904586646297004,
+          "mean": -0.0009451508607929996,
+          "median": -0.000839923163118316,
+          "n": 28801,
+          "profit_factor": 0.9149303664253363
+        },
+        "r20": {
+          "ci_high": 0.5064356740538636,
+          "ci_low": 0.49488423595217124,
+          "expectancy": 0.00141335161285054,
+          "hit_rate": 0.5006600430764955,
+          "mean": 0.00141335161285054,
+          "median": 0.00026825644746419994,
+          "n": 28786,
+          "profit_factor": 1.0236820045395183
+        },
+        "r5": {
+          "ci_high": 0.4997155665352196,
+          "ci_low": 0.48816757343941414,
+          "expectancy": -0.0006357582976930057,
+          "hit_rate": 0.4939407618320081,
+          "mean": -0.0006357582976930057,
+          "median": -0.0007474218992429274,
+          "n": 28799,
+          "profit_factor": 0.9779786255242543
+        },
+        "x5": {
+          "ci_high": 0.4953401647601642,
+          "ci_low": 0.483793838462629,
+          "expectancy": -0.0007827883630085888,
+          "hit_rate": 0.489565609917011,
+          "mean": -0.0007827883630085888,
+          "median": -0.001,
+          "n": 28799,
+          "profit_factor": 0.9700328372129012
+        }
+      },
+      ">$5M": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.5051017637590838,
+          "ci_low": 0.3853988222515731,
+          "expectancy": -0.000871838719163581,
+          "hit_rate": 0.4444444444444444,
+          "mean": -0.000871838719163581,
+          "median": -0.0011652510162937215,
+          "n": 261,
+          "profit_factor": 0.9050385186545127
+        },
+        "r20": {
+          "ci_high": 0.5583305651233101,
+          "ci_low": 0.4378935930149883,
+          "expectancy": 0.00359048946695839,
+          "hit_rate": 0.49808429118773945,
+          "mean": 0.00359048946695839,
+          "median": -0.003929558920342301,
+          "n": 261,
+          "profit_factor": 1.0788621536643572
+        },
+        "r5": {
+          "ci_high": 0.5203801802626535,
+          "ci_low": 0.40032714064161523,
+          "expectancy": -0.003734210476602552,
+          "hit_rate": 0.45977011494252873,
+          "mean": -0.003734210476602552,
+          "median": -0.003438760026013398,
+          "n": 261,
+          "profit_factor": 0.8419699267157453
+        },
+        "x5": {
+          "ci_high": 0.48207743278434473,
+          "ci_low": 0.36311305088589435,
+          "expectancy": -0.0024417291047994904,
+          "hit_rate": 0.421455938697318,
+          "mean": -0.0024417291047994904,
+          "median": -0.0010000000000000009,
+          "n": 261,
+          "profit_factor": 0.8641259962855726
+        }
+      }
+    },
+    "by_rr": {
+      "n/a": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4798771666913842,
+          "ci_low": 0.47344918831761235,
+          "expectancy": -0.0009056526964286173,
+          "hit_rate": 0.47666221110727836,
+          "mean": -0.0009056526964286173,
+          "median": -0.001,
+          "n": 92768,
+          "profit_factor": 0.917961866076118
+        },
+        "r20": {
+          "ci_high": 0.5031702181088098,
+          "ci_low": 0.4967326932993086,
+          "expectancy": 0.0013201499704048368,
+          "hit_rate": 0.4999514536922164,
+          "mean": 0.0013201499704048368,
+          "median": -1.136925358380305e-05,
+          "n": 92695,
+          "profit_factor": 1.0221985250357186
+        },
+        "r5": {
+          "ci_high": 0.4954012946205646,
+          "ci_low": 0.4889666038235062,
+          "expectancy": -0.000689234234180277,
+          "hit_rate": 0.4921836255040214,
+          "mean": -0.000689234234180277,
+          "median": -0.0009331028205286076,
+          "n": 92754,
+          "profit_factor": 0.9757018427937272
+        },
+        "x5": {
+          "ci_high": 0.4903767926023722,
+          "ci_low": 0.4839434378071288,
+          "expectancy": -0.0008893864048895538,
+          "hit_rate": 0.48715958341419235,
+          "mean": -0.0008893864048895538,
+          "median": -0.0010000000000000009,
+          "n": 92754,
+          "profit_factor": 0.9656548959437821
+        }
+      }
+    },
+    "by_score": {
+      "0\u20135": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4798771666913842,
+          "ci_low": 0.47344918831761235,
+          "expectancy": -0.0009056526964286173,
+          "hit_rate": 0.47666221110727836,
+          "mean": -0.0009056526964286173,
+          "median": -0.001,
+          "n": 92768,
+          "profit_factor": 0.917961866076118
+        },
+        "r20": {
+          "ci_high": 0.5031702181088098,
+          "ci_low": 0.4967326932993086,
+          "expectancy": 0.0013201499704048368,
+          "hit_rate": 0.4999514536922164,
+          "mean": 0.0013201499704048368,
+          "median": -1.136925358380305e-05,
+          "n": 92695,
+          "profit_factor": 1.0221985250357186
+        },
+        "r5": {
+          "ci_high": 0.4954012946205646,
+          "ci_low": 0.4889666038235062,
+          "expectancy": -0.000689234234180277,
+          "hit_rate": 0.4921836255040214,
+          "mean": -0.000689234234180277,
+          "median": -0.0009331028205286076,
+          "n": 92754,
+          "profit_factor": 0.9757018427937272
+        },
+        "x5": {
+          "ci_high": 0.4903767926023722,
+          "ci_low": 0.4839434378071288,
+          "expectancy": -0.0008893864048895538,
+          "hit_rate": 0.48715958341419235,
+          "mean": -0.0008893864048895538,
+          "median": -0.0010000000000000009,
+          "n": 92754,
+          "profit_factor": 0.9656548959437821
+        }
+      }
+    },
+    "by_sector": {
+      "Basic Materials": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4953221130684493,
+          "ci_low": 0.4524958545553285,
+          "expectancy": -0.0015930133787843608,
+          "hit_rate": 0.47386091127098323,
+          "mean": -0.0015930133787843608,
+          "median": -0.001,
+          "n": 2085,
+          "profit_factor": 0.8592136647701909
+        },
+        "r20": {
+          "ci_high": 0.5198891104832795,
+          "ci_low": 0.476714218952617,
+          "expectancy": 0.00028249338231835415,
+          "hit_rate": 0.49829849295089934,
+          "mean": 0.00028249338231835415,
+          "median": -0.00025354565812396503,
+          "n": 2057,
+          "profit_factor": 1.0049590261932362
+        },
+        "r5": {
+          "ci_high": 0.5204989257716149,
+          "ci_low": 0.47758338306717696,
+          "expectancy": -0.0023515128043667633,
+          "hit_rate": 0.4990393852065322,
+          "mean": -0.0023515128043667633,
+          "median": -8.861742932003615e-05,
+          "n": 2082,
+          "profit_factor": 0.9151633321487268
+        },
+        "x5": {
+          "ci_high": 0.5118654018333795,
+          "ci_low": 0.4689576865545402,
+          "expectancy": -0.0022519249636149064,
+          "hit_rate": 0.4903938520653218,
+          "mean": -0.0022519249636149064,
+          "median": -0.0008117414782382588,
+          "n": 2082,
+          "profit_factor": 0.9140117944711063
+        }
+      },
+      "Communication Services": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.5052158017251731,
+          "ci_low": 0.48069493219158527,
+          "expectancy": -0.00024521731132031967,
+          "hit_rate": 0.49295112781954886,
+          "mean": -0.00024521731132031967,
+          "median": -0.00028711185648222417,
+          "n": 6384,
+          "profit_factor": 0.974948859356724
+        },
+        "r20": {
+          "ci_high": 0.5196180519491846,
+          "ci_low": 0.4950974037377567,
+          "expectancy": 0.0031344626795386655,
+          "hit_rate": 0.5073621553884712,
+          "mean": 0.0031344626795386655,
+          "median": 0.002476100030175011,
+          "n": 6384,
+          "profit_factor": 1.056005258271481
+        },
+        "r5": {
+          "ci_high": 0.5130443745448179,
+          "ci_low": 0.48852109946443134,
+          "expectancy": 0.0005281426252050548,
+          "hit_rate": 0.5007832080200502,
+          "mean": 0.0005281426252050548,
+          "median": 0.00013440573049217173,
+          "n": 6384,
+          "profit_factor": 1.0208399576605962
+        },
+        "x5": {
+          "ci_high": 0.509913306254289,
+          "ci_low": 0.48539027171796373,
+          "expectancy": 0.00011987342255467754,
+          "hit_rate": 0.4976503759398496,
+          "mean": 0.00011987342255467754,
+          "median": -0.00023288973714385942,
+          "n": 6384,
+          "profit_factor": 1.0052906198958362
+        }
+      },
+      "Consumer Cyclical": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4898968205512101,
+          "ci_low": 0.4708795123708278,
+          "expectancy": -0.001107930244079048,
+          "hit_rate": 0.480381060177325,
+          "mean": -0.001107930244079048,
+          "median": -0.001,
+          "n": 10602,
+          "profit_factor": 0.8940975010783062
+        },
+        "r20": {
+          "ci_high": 0.5078187469686468,
+          "ci_low": 0.48878689722652946,
+          "expectancy": 0.0008429275697846351,
+          "hit_rate": 0.49830220713073003,
+          "mean": 0.0008429275697846351,
+          "median": -0.0006288300540611127,
+          "n": 10602,
+          "profit_factor": 1.015900368953688
+        },
+        "r5": {
+          "ci_high": 0.5009344008045437,
+          "ci_low": 0.48190524484884795,
+          "expectancy": -0.0008519923661938355,
+          "hit_rate": 0.4914167138275797,
+          "mean": -0.0008519923661938355,
+          "median": -0.001,
+          "n": 10602,
+          "profit_factor": 0.9675348689794007
+        },
+        "x5": {
+          "ci_high": 0.50206619807149,
+          "ci_low": 0.48303635145178403,
+          "expectancy": -0.001018744356954455,
+          "hit_rate": 0.4925485757404263,
+          "mean": -0.001018744356954455,
+          "median": -0.0009442269070031868,
+          "n": 10602,
+          "profit_factor": 0.9573294932507583
+        }
+      },
+      "Consumer Defensive": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4936009279842679,
+          "ci_low": 0.4590447103550196,
+          "expectancy": -0.0007188769967828985,
+          "hit_rate": 0.47629444791016845,
+          "mean": -0.0007188769967828985,
+          "median": -0.001,
+          "n": 3206,
+          "profit_factor": 0.9209876594496974
+        },
+        "r20": {
+          "ci_high": 0.520101141643566,
+          "ci_low": 0.485506611710992,
+          "expectancy": -0.0010194382888368179,
+          "hit_rate": 0.5028072364316906,
+          "mean": -0.0010194382888368179,
+          "median": 0.0009015290747347313,
+          "n": 3206,
+          "profit_factor": 0.978919044485854
+        },
+        "r5": {
+          "ci_high": 0.499528725828452,
+          "ci_low": 0.4649555029260136,
+          "expectancy": -0.0015897424463353206,
+          "hit_rate": 0.4822208359326263,
+          "mean": -0.0015897424463353206,
+          "median": -0.0013686589050526657,
+          "n": 3206,
+          "profit_factor": 0.9334447388662961
+        },
+        "x5": {
+          "ci_high": 0.4948490876833434,
+          "ci_low": 0.46028888548019214,
+          "expectancy": -0.0018146552607973343,
+          "hit_rate": 0.4775421085464754,
+          "mean": -0.0018146552607973343,
+          "median": -0.0018380337135502907,
+          "n": 3206,
+          "profit_factor": 0.9242386522970961
+        }
+      },
+      "Energy": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4982649041219458,
+          "ci_low": 0.4614501555478251,
+          "expectancy": -0.0002464583306680516,
+          "hit_rate": 0.47983014861995754,
+          "mean": -0.0002464583306680516,
+          "median": -0.0007601279850208411,
+          "n": 2826,
+          "profit_factor": 0.9736685107888866
+        },
+        "r20": {
+          "ci_high": 0.521792346270643,
+          "ci_low": 0.4849289358839709,
+          "expectancy": 0.0028627243731163803,
+          "hit_rate": 0.5033652143110167,
+          "mean": 0.0028627243731163803,
+          "median": 0.0006824395373290501,
+          "n": 2823,
+          "profit_factor": 1.0685502214972205
+        },
+        "r5": {
+          "ci_high": 0.4998540574384223,
+          "ci_low": 0.4630282757399358,
+          "expectancy": -0.0012257049158902892,
+          "hit_rate": 0.4814159292035398,
+          "mean": -0.0012257049158902892,
+          "median": -0.0017475703962120939,
+          "n": 2825,
+          "profit_factor": 0.9441160001110468
+        },
+        "x5": {
+          "ci_high": 0.5009159741869854,
+          "ci_low": 0.4640873685240379,
+          "expectancy": -0.001693993726858765,
+          "hit_rate": 0.4824778761061947,
+          "mean": -0.001693993726858765,
+          "median": -0.0016149948949586426,
+          "n": 2825,
+          "profit_factor": 0.9223509848256961
+        }
+      },
+      "Financial Services": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4847532037315338,
+          "ci_low": 0.46253274163433117,
+          "expectancy": -0.0011775500731032273,
+          "hit_rate": 0.4736299161831077,
+          "mean": -0.0011775500731032273,
+          "median": -0.0011043187982474603,
+          "n": 7755,
+          "profit_factor": 0.8946458849538149
+        },
+        "r20": {
+          "ci_high": 0.5173818627176529,
+          "ci_low": 0.4951264520879005,
+          "expectancy": 0.0036693191895278195,
+          "hit_rate": 0.5062572571281125,
+          "mean": 0.0036693191895278195,
+          "median": 0.0016865054763380858,
+          "n": 7751,
+          "profit_factor": 1.0619445367258038
+        },
+        "r5": {
+          "ci_high": 0.5078388938095363,
+          "ci_low": 0.4855879600135911,
+          "expectancy": -0.00026707194903910047,
+          "hit_rate": 0.49671179883945843,
+          "mean": -0.00026707194903910047,
+          "median": -0.00040035978412944397,
+          "n": 7755,
+          "profit_factor": 0.9905065264878825
+        },
+        "x5": {
+          "ci_high": 0.5021663982190909,
+          "ci_low": 0.47991855631845237,
+          "expectancy": -0.0006707790416742946,
+          "hit_rate": 0.4910380399742102,
+          "mean": -0.0006707790416742946,
+          "median": -0.0005883895596040523,
+          "n": 7755,
+          "profit_factor": 0.97275805229195
+        }
+      },
+      "Healthcare": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4978567839428576,
+          "ci_low": 0.47287416951779737,
+          "expectancy": -0.0004873474988088606,
+          "hit_rate": 0.4853563293198829,
+          "mean": -0.0004873474988088606,
+          "median": -0.0007495304664533178,
+          "n": 6146,
+          "profit_factor": 0.9533113743729634
+        },
+        "r20": {
+          "ci_high": 0.5111152586517654,
+          "ci_low": 0.4861199929442423,
+          "expectancy": 0.0009505218371055313,
+          "hit_rate": 0.4986167615947925,
+          "mean": 0.0009505218371055313,
+          "median": -0.0001471215351812596,
+          "n": 6145,
+          "profit_factor": 1.018367353742317
+        },
+        "r5": {
+          "ci_high": 0.5046084599227078,
+          "ci_low": 0.4796162109486316,
+          "expectancy": -0.0006328392955641371,
+          "hit_rate": 0.4921074043938161,
+          "mean": -0.0006328392955641371,
+          "median": -0.0009457835897769265,
+          "n": 6145,
+          "profit_factor": 0.9758793530047288
+        },
+        "x5": {
+          "ci_high": 0.5000524408395043,
+          "ci_low": 0.4750648235245671,
+          "expectancy": -0.0008036784963831,
+          "hit_rate": 0.4875508543531326,
+          "mean": -0.0008036784963831,
+          "median": -0.0013291314221767206,
+          "n": 6145,
+          "profit_factor": 0.9685165297002699
+        }
+      },
+      "Industrials": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48691871412813065,
+          "ci_low": 0.4612280191091724,
+          "expectancy": -0.0014955703023098266,
+          "hit_rate": 0.474056197207378,
+          "mean": -0.0014955703023098266,
+          "median": -0.0014564410050000856,
+          "n": 5801,
+          "profit_factor": 0.8764097935563171
+        },
+        "r20": {
+          "ci_high": 0.5122597086099691,
+          "ci_low": 0.48653440146531685,
+          "expectancy": -0.0005062036205119297,
+          "hit_rate": 0.49939665574900877,
+          "mean": -0.0005062036205119297,
+          "median": -0.00012837150743305516,
+          "n": 5801,
+          "profit_factor": 0.9922189433116753
+        },
+        "r5": {
+          "ci_high": 0.5008862080562744,
+          "ci_low": 0.47516826343869273,
+          "expectancy": -0.0018300528620157934,
+          "hit_rate": 0.48801930701603174,
+          "mean": -0.0018300528620157934,
+          "median": -0.0012563007261854322,
+          "n": 5801,
+          "profit_factor": 0.9379038487415045
+        },
+        "x5": {
+          "ci_high": 0.49950714944225316,
+          "ci_low": 0.47379100222479653,
+          "expectancy": -0.0016708913249516627,
+          "hit_rate": 0.4866402344423375,
+          "mean": -0.0016708913249516627,
+          "median": -0.0013788926829684245,
+          "n": 5801,
+          "profit_factor": 0.936814706990345
+        }
+      },
+      "Real Estate": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.5100983312009899,
+          "ci_low": 0.42398996256981103,
+          "expectancy": -0.0014039000282503361,
+          "hit_rate": 0.466796875,
+          "mean": -0.0014039000282503361,
+          "median": -0.001764270835617975,
+          "n": 512,
+          "profit_factor": 0.916670150595007
+        },
+        "r20": {
+          "ci_high": 0.5353891710965993,
+          "ci_low": 0.44910219214358915,
+          "expectancy": 0.0026270968452477383,
+          "hit_rate": 0.4921875,
+          "mean": 0.0026270968452477383,
+          "median": -0.0012653082882309033,
+          "n": 512,
+          "profit_factor": 1.0276988079405538
+        },
+        "r5": {
+          "ci_high": 0.547024569927028,
+          "ci_low": 0.4607297484528779,
+          "expectancy": -0.002564976705050489,
+          "hit_rate": 0.50390625,
+          "mean": -0.002564976705050489,
+          "median": 0.00044594449801777045,
+          "n": 512,
+          "profit_factor": 0.9354476143291927
+        },
+        "x5": {
+          "ci_high": 0.5276191641091302,
+          "ci_low": 0.44136356237124663,
+          "expectancy": -0.003013695142235507,
+          "hit_rate": 0.484375,
+          "mean": -0.003013695142235507,
+          "median": -0.0019927670548990357,
+          "n": 512,
+          "profit_factor": 0.9243602973558552
+        }
+      },
+      "Technology": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4866333380013783,
+          "ci_low": 0.4739593902488899,
+          "expectancy": -0.0007405535867392252,
+          "hit_rate": 0.48029319371727747,
+          "mean": -0.0007405535867392252,
+          "median": -0.001,
+          "n": 23875,
+          "profit_factor": 0.9409861851074353
+        },
+        "r20": {
+          "ci_high": 0.5067617319712565,
+          "ci_low": 0.49407607519649904,
+          "expectancy": 0.0017029280579060214,
+          "hit_rate": 0.5004189710072063,
+          "mean": 0.0017029280579060214,
+          "median": 0.0002101258413813598,
+          "n": 23868,
+          "profit_factor": 1.0227967677950014
+        },
+        "r5": {
+          "ci_high": 0.5008553937817837,
+          "ci_low": 0.4881720901763978,
+          "expectancy": -0.000358679953893929,
+          "hit_rate": 0.4945128591773477,
+          "mean": -0.000358679953893929,
+          "median": -0.0009257670653934893,
+          "n": 23874,
+          "profit_factor": 0.9896903969933912
+        },
+        "x5": {
+          "ci_high": 0.4985516150382859,
+          "ci_low": 0.4858690873756207,
+          "expectancy": -0.0006186306729554416,
+          "hit_rate": 0.4922090977632571,
+          "mean": -0.0006186306729554416,
+          "median": -0.0009637368051716444,
+          "n": 23874,
+          "profit_factor": 0.9801317622762301
+        }
+      },
+      "Utilities": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.5137792415303432,
+          "ci_low": 0.4660527901385872,
+          "expectancy": -0.00021530408794470112,
+          "hit_rate": 0.48989298454221164,
+          "mean": -0.00021530408794470112,
+          "median": -0.0008519816885665934,
+          "n": 1682,
+          "profit_factor": 0.9853991235137105
+        },
+        "r20": {
+          "ci_high": 0.5161539641752159,
+          "ci_low": 0.4684234718069073,
+          "expectancy": 0.0021999666952798765,
+          "hit_rate": 0.49227110582639716,
+          "mean": 0.0021999666952798765,
+          "median": -0.0024464312401563095,
+          "n": 1682,
+          "profit_factor": 1.03079421501688
+        },
+        "r5": {
+          "ci_high": 0.5197150377273421,
+          "ci_low": 0.47198050472457054,
+          "expectancy": -0.000577917241877766,
+          "hit_rate": 0.4958382877526754,
+          "mean": -0.000577917241877766,
+          "median": -0.0008426987980477687,
+          "n": 1682,
+          "profit_factor": 0.9843198427955892
+        },
+        "x5": {
+          "ci_high": 0.5214951199020476,
+          "ci_low": 0.4737594757847597,
+          "expectancy": -0.0005548197106447592,
+          "hit_rate": 0.4976218787158145,
+          "mean": -0.0005548197106447592,
+          "median": -0.00045624742096928017,
+          "n": 1682,
+          "profit_factor": 0.9834745653147557
+        }
+      },
+      "n/a": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4712143225919013,
+          "ci_low": 0.45800244551185554,
+          "expectancy": -0.001133488843888529,
+          "hit_rate": 0.46460217411162874,
+          "mean": -0.001133488843888529,
+          "median": -0.001,
+          "n": 21894,
+          "profit_factor": 0.8858606992574054
+        },
+        "r20": {
+          "ci_high": 0.5030600435984863,
+          "ci_low": 0.4898061933693177,
+          "expectancy": 0.0005028204377120759,
+          "hit_rate": 0.4964324917672887,
+          "mean": 0.0005028204377120759,
+          "median": -0.0006452990971485542,
+          "n": 21864,
+          "profit_factor": 1.0100221594703251
+        },
+        "r5": {
+          "ci_high": 0.49529260566622046,
+          "ci_low": 0.4820484820829024,
+          "expectancy": -0.000794497125987634,
+          "hit_rate": 0.4886685552407932,
+          "mean": -0.000794497125987634,
+          "median": -0.001,
+          "n": 21886,
+          "profit_factor": 0.9672830687155639
+        },
+        "x5": {
+          "ci_high": 0.48222099559505177,
+          "ci_low": 0.468989249800237,
+          "expectancy": -0.0009178526126644849,
+          "hit_rate": 0.47560084072009506,
+          "mean": -0.0009178526126644849,
+          "median": -0.0010000000000000009,
+          "n": 21886,
+          "profit_factor": 0.9589837986959325
+        }
+      }
+    },
+    "by_setup": {
+      "clean_other": {
+        "daily_x5": {
+          "boot_ci_high": 0.002013202619257042,
+          "boot_ci_low": -0.002383013694763658,
+          "hit_days": 0.5,
+          "mean_daily": -0.00024744301725830164,
+          "n_days": 250,
+          "sd": 0.017167775129014257,
+          "t_stat": -0.2278931078023489
+        },
+        "mean_r5": 0.00020729480285713528,
+        "mean_x5": 0.00013516237088178384,
+        "n": 6619,
+        "plan": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "profit_factor": 1.0077321317825265,
+        "trades_per_day": 26.476,
+        "win_rate": 0.4909338168631006
+      },
+      "far_otm": {
+        "daily_x5": {
+          "boot_ci_high": 0.011443924442103936,
+          "boot_ci_low": -0.018781594889854383,
+          "hit_days": 0.48068669527896996,
+          "mean_daily": -0.0018484661098115854,
+          "n_days": 233,
+          "sd": 0.11715683527611329,
+          "t_stat": -0.240836230617872
+        },
+        "mean_r5": -0.011879942479641716,
+        "mean_x5": -0.014798927715042254,
+        "n": 787,
+        "plan": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "profit_factor": 0.8021084917296569,
+        "trades_per_day": 3.148,
+        "win_rate": 0.48792884371029227
+      },
+      "noise": {
+        "daily_x5": {
+          "boot_ci_high": -0.0003756916598373033,
+          "boot_ci_low": -0.0015222209362894172,
+          "hit_days": 0.392,
+          "mean_daily": -0.0009741907674012838,
+          "n_days": 250,
+          "sd": 0.004801031059274035,
+          "t_stat": -3.2083334417765643
+        },
+        "mean_r5": -0.0009279376456735065,
+        "mean_x5": -0.0009244137738818522,
+        "n": 72948,
+        "plan": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "profit_factor": 0.9666974239525877,
+        "trades_per_day": 291.792,
+        "win_rate": 0.4904504010420237
+      },
+      "pre_earnings": {
+        "daily_x5": {
+          "boot_ci_high": 0.005963078436835043,
+          "boot_ci_low": -0.013850392284779729,
+          "hit_days": 0.45544554455445546,
+          "mean_daily": -0.0036489756096764144,
+          "n_days": 202,
+          "sd": 0.07095082828748478,
+          "t_stat": -0.7309525329400381
+        },
+        "mean_r5": -0.0002786255179299674,
+        "mean_x5": -0.0004305616969652074,
+        "n": 1375,
+        "plan": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "profit_factor": 0.99354792323232,
+        "trades_per_day": 5.5,
+        "win_rate": 0.48
+      },
+      "pure_all": {
+        "daily_x5": {
+          "boot_ci_high": 0.00019802401589201892,
+          "boot_ci_low": -0.0029803082768669422,
+          "hit_days": 0.456,
+          "mean_daily": -0.0013357850587602188,
+          "n_days": 250,
+          "sd": 0.01299558399305742,
+          "t_stat": -1.6252148623566214
+        },
+        "mean_r5": -0.0013569791937382226,
+        "mean_x5": -0.00155029420338812,
+        "n": 16420,
+        "plan": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "profit_factor": 0.9557458775739316,
+        "trades_per_day": 65.68,
+        "win_rate": 0.49119922041537245
+      },
+      "put_sale": {
+        "daily_x5": {
+          "boot_ci_high": 0.008093059664325943,
+          "boot_ci_low": -0.0012782596144612077,
+          "hit_days": 0.556,
+          "mean_daily": 0.003464220331742407,
+          "n_days": 250,
+          "sd": 0.03710110782397576,
+          "t_stat": 1.4763476358906453
+        },
+        "mean_r5": 0.00765592394471402,
+        "mean_x5": 0.003053603683640225,
+        "n": 3400,
+        "plan": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "profit_factor": 1.2730770858286802,
+        "trades_per_day": 13.6,
+        "win_rate": 0.5341176470588235
+      },
+      "repeat_buyer": {
+        "daily_x5": {
+          "boot_ci_high": 0.00020752410371201204,
+          "boot_ci_low": -0.0035675583796522846,
+          "hit_days": 0.436,
+          "mean_daily": -0.0017373289213876788,
+          "n_days": 250,
+          "sd": 0.015545325803213482,
+          "t_stat": -1.7670637804622265
+        },
+        "mean_r5": -0.0014972866678689886,
+        "mean_x5": -0.0017165176573382254,
+        "n": 5194,
+        "plan": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "profit_factor": 0.948094338983045,
+        "trades_per_day": 20.776,
+        "win_rate": 0.5025028879476319
+      },
+      "sweep": {
+        "daily_x5": {
+          "boot_ci_high": 0.0010820680478063668,
+          "boot_ci_low": -0.005815905235028018,
+          "hit_days": 0.48,
+          "mean_daily": -0.0025084398086816593,
+          "n_days": 250,
+          "sd": 0.02791287489293564,
+          "t_stat": -1.4209183395291596
+        },
+        "mean_r5": -0.0023539863543700075,
+        "mean_x5": -0.001971477147468718,
+        "n": 2279,
+        "plan": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "profit_factor": 0.9165960753646614,
+        "trades_per_day": 9.116,
+        "win_rate": 0.47520842474769637
+      },
+      "whale_sweep": {
+        "daily_x5": {
+          "boot_ci_high": 0.014571969144850769,
+          "boot_ci_low": -0.01505299957477108,
+          "hit_days": 0.4083333333333333,
+          "mean_daily": -0.0013093763447092005,
+          "n_days": 120,
+          "sd": 0.08124179110222202,
+          "t_stat": -0.17655321246143085
+        },
+        "mean_r5": -0.004685853699661995,
+        "mean_x5": -0.004225406744360381,
+        "n": 166,
+        "plan": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "profit_factor": 0.8521872665366448,
+        "trades_per_day": 0.664,
+        "win_rate": 0.4759036144578313
+      }
+    },
+    "by_spy_trend": {
+      "SPY above 50d": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.47893107866199924,
+          "ci_low": 0.47152216288031334,
+          "expectancy": -0.0008445294151422576,
+          "hit_rate": 0.4752252574882895,
+          "mean": -0.0008445294151422576,
+          "median": -0.001,
+          "n": 69809,
+          "profit_factor": 0.9168601628945517
+        },
+        "r20": {
+          "ci_high": 0.5037034932248172,
+          "ci_low": 0.4962821700306066,
+          "expectancy": 0.0017635090581426002,
+          "hit_rate": 0.49999283123288457,
+          "mean": 0.0017635090581426002,
+          "median": -3.6532713384431967e-06,
+          "n": 69747,
+          "profit_factor": 1.0299612687000022
+        },
+        "r5": {
+          "ci_high": 0.4954637585701102,
+          "ci_low": 0.4880459964112674,
+          "expectancy": -0.0004280622366186623,
+          "hit_rate": 0.49175442366931726,
+          "mean": -0.0004280622366186623,
+          "median": -0.000977552807021497,
+          "n": 69795,
+          "profit_factor": 0.9844778538627087
+        },
+        "x5": {
+          "ci_high": 0.4908784382568956,
+          "ci_low": 0.48346211011117346,
+          "expectancy": -0.0006664157341010182,
+          "hit_rate": 0.4871695680206318,
+          "mean": -0.0006664157341010182,
+          "median": -0.001,
+          "n": 69795,
+          "profit_factor": 0.9745765300886403
+        }
+      },
+      "SPY below 50d": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4874970772864353,
+          "ci_low": 0.4745720770816373,
+          "expectancy": -0.0010915037850352414,
+          "hit_rate": 0.481031403806786,
+          "mean": -0.0010915037850352414,
+          "median": -0.001,
+          "n": 22959,
+          "profit_factor": 0.9204420672441102
+        },
+        "r20": {
+          "ci_high": 0.50629442606802,
+          "ci_low": 0.4933570180235079,
+          "expectancy": -2.737339949431691e-05,
+          "hit_rate": 0.49982569287083845,
+          "mean": -2.737339949431691e-05,
+          "median": -2.382639048964432e-05,
+          "n": 22948,
+          "profit_factor": 0.9995536398372452
+        },
+        "r5": {
+          "ci_high": 0.4999560882227289,
+          "ci_low": 0.48702287521705717,
+          "expectancy": -0.0014831930115579023,
+          "hit_rate": 0.49348839235158326,
+          "mean": -0.0014831930115579023,
+          "median": -0.0008159735001841409,
+          "n": 22959,
+          "profit_factor": 0.9517845294479449
+        },
+        "x5": {
+          "ci_high": 0.49359639581093956,
+          "ci_low": 0.4806663713894404,
+          "expectancy": -0.001567213747878614,
+          "hit_rate": 0.48712923036717626,
+          "mean": -0.001567213747878614,
+          "median": -0.0010000000000000009,
+          "n": 22959,
+          "profit_factor": 0.9371399370598088
+        }
+      }
+    },
+    "by_weekday": {
+      "Fri": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48359376615939037,
+          "ci_low": 0.4694616480008557,
+          "expectancy": -0.0009101814561990782,
+          "hit_rate": 0.47652300797331804,
+          "mean": -0.0009101814561990782,
+          "median": -0.001,
+          "n": 19189,
+          "profit_factor": 0.9183215949855553
+        },
+        "r20": {
+          "ci_high": 0.5070507368666475,
+          "ci_low": 0.4928971169029744,
+          "expectancy": 0.00041572811920944974,
+          "hit_rate": 0.4999739216606687,
+          "mean": 0.00041572811920944974,
+          "median": -6.581398236726009e-06,
+          "n": 19173,
+          "profit_factor": 1.00676129488565
+        },
+        "r5": {
+          "ci_high": 0.5004294854738961,
+          "ci_low": 0.48628154141789914,
+          "expectancy": -0.0004255513792070138,
+          "hit_rate": 0.49335418295543393,
+          "mean": -0.0004255513792070138,
+          "median": -0.0009431398191847009,
+          "n": 19185,
+          "profit_factor": 0.9852971634545155
+        },
+        "x5": {
+          "ci_high": 0.49292291535725774,
+          "ci_low": 0.47877938896527106,
+          "expectancy": -0.0007663543337462739,
+          "hit_rate": 0.48584831899921815,
+          "mean": -0.0007663543337462739,
+          "median": -0.0010000000000000009,
+          "n": 19185,
+          "profit_factor": 0.9704851509486508
+        }
+      },
+      "Mon": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4876850276252676,
+          "ci_low": 0.47294454036451145,
+          "expectancy": -0.0008981478595539506,
+          "hit_rate": 0.4803104991784237,
+          "mean": -0.0008981478595539506,
+          "median": -0.0009164275566203575,
+          "n": 17649,
+          "profit_factor": 0.9166029138457445
+        },
+        "r20": {
+          "ci_high": 0.508825114773232,
+          "ci_low": 0.4940665594367354,
+          "expectancy": 0.002989483123541412,
+          "hit_rate": 0.5014461521011739,
+          "mean": 0.002989483123541412,
+          "median": 0.00037969094922740785,
+          "n": 17633,
+          "profit_factor": 1.0523326746998172
+        },
+        "r5": {
+          "ci_high": 0.49774273284995,
+          "ci_low": 0.48299145506343205,
+          "expectancy": -0.0006233164804811778,
+          "hit_rate": 0.4903649965994106,
+          "mean": -0.0006233164804811778,
+          "median": -0.001,
+          "n": 17644,
+          "profit_factor": 0.9783198070562288
+        },
+        "x5": {
+          "ci_high": 0.49439843207906636,
+          "ci_low": 0.47964938575719535,
+          "expectancy": -0.0007464797636938446,
+          "hit_rate": 0.4870210836545001,
+          "mean": -0.0007464797636938446,
+          "median": -0.001,
+          "n": 17644,
+          "profit_factor": 0.9713814188264487
+        }
+      },
+      "Thu": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48556520299810646,
+          "ci_low": 0.47099945808983223,
+          "expectancy": -0.0005461007042782711,
+          "hit_rate": 0.47827771321047097,
+          "mean": -0.0005461007042782711,
+          "median": -0.0009200095988480808,
+          "n": 18069,
+          "profit_factor": 0.9489536119183958
+        },
+        "r20": {
+          "ci_high": 0.5138549638103245,
+          "ci_low": 0.49927025516484785,
+          "expectancy": 0.0025291923818219595,
+          "hit_rate": 0.5065640059823852,
+          "mean": 0.0025291923818219595,
+          "median": 0.0016865054763380858,
+          "n": 18053,
+          "profit_factor": 1.0430184329463907
+        },
+        "r5": {
+          "ci_high": 0.506543089103528,
+          "ci_low": 0.49196279122027503,
+          "expectancy": -0.00025309416263516986,
+          "hit_rate": 0.4992527813139979,
+          "mean": -0.00025309416263516986,
+          "median": -0.00012383177570096573,
+          "n": 18067,
+          "profit_factor": 0.9909922797604308
+        },
+        "x5": {
+          "ci_high": 0.49658062710111567,
+          "ci_low": 0.48200365754005997,
+          "expectancy": -0.0007431931842147524,
+          "hit_rate": 0.4892898655006365,
+          "mean": -0.0007431931842147524,
+          "median": -0.0009435059124160983,
+          "n": 18067,
+          "profit_factor": 0.9713539476258222
+        }
+      },
+      "Tue": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4844505722607365,
+          "ci_low": 0.470383105830143,
+          "expectancy": -0.0008570147926456727,
+          "hit_rate": 0.4774123599566317,
+          "mean": -0.0008570147926456727,
+          "median": -0.001,
+          "n": 19369,
+          "profit_factor": 0.9266169804375967
+        },
+        "r20": {
+          "ci_high": 0.5036339894601269,
+          "ci_low": 0.4895484772325042,
+          "expectancy": 0.0011995019212075757,
+          "hit_rate": 0.4965905568757103,
+          "mean": 0.0011995019212075757,
+          "median": -0.0007952892301265604,
+          "n": 19358,
+          "profit_factor": 1.0198843170016425
+        },
+        "r5": {
+          "ci_high": 0.4976186562230212,
+          "ci_low": 0.48353858993400695,
+          "expectancy": -0.0007029007209711343,
+          "hit_rate": 0.49057675427273195,
+          "mean": -0.0007029007209711343,
+          "median": -0.0009246987951808663,
+          "n": 19367,
+          "profit_factor": 0.9757342151351943
+        },
+        "x5": {
+          "ci_high": 0.49555308864808667,
+          "ci_low": 0.4814742388584271,
+          "expectancy": -0.0007231187391534052,
+          "hit_rate": 0.48851138534620747,
+          "mean": -0.0007231187391534052,
+          "median": -0.001,
+          "n": 19367,
+          "profit_factor": 0.9723233257875238
+        }
+      },
+      "Wed": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4781601988721232,
+          "ci_low": 0.46377269484383515,
+          "expectancy": -0.0013103878791726185,
+          "hit_rate": 0.4709604153147307,
+          "mean": -0.0013103878791726185,
+          "median": -0.001,
+          "n": 18492,
+          "profit_factor": 0.8792593718980795
+        },
+        "r20": {
+          "ci_high": 0.5027715707676728,
+          "ci_low": 0.4883548546422278,
+          "expectancy": -0.00038924547570625827,
+          "hit_rate": 0.49556229029115706,
+          "mean": -0.00038924547570625827,
+          "median": -0.0010790110301587266,
+          "n": 18478,
+          "profit_factor": 0.9934451905795045
+        },
+        "r5": {
+          "ci_high": 0.49468684549219494,
+          "ci_low": 0.4802791471876235,
+          "expectancy": -0.0014375373136165373,
+          "hit_rate": 0.48748039586826025,
+          "mean": -0.0014375373136165373,
+          "median": -0.0012123142250530785,
+          "n": 18491,
+          "profit_factor": 0.9468201368126831
+        },
+        "x5": {
+          "ci_high": 0.49236095560882737,
+          "ci_low": 0.47795509186681034,
+          "expectancy": -0.0014703822332592764,
+          "hit_rate": 0.48515494024119843,
+          "mean": -0.0014703822332592764,
+          "median": -0.0010000000000000009,
+          "n": 18491,
+          "profit_factor": 0.9420056425567809
+        }
+      }
+    },
+    "by_year": {
+      "2024": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4817847628376403,
+          "ci_low": 0.46804992695780406,
+          "expectancy": -0.0009030746158601867,
+          "hit_rate": 0.47491260032497906,
+          "mean": -0.0009030746158601867,
+          "median": -0.001,
+          "n": 20309,
+          "profit_factor": 0.9146618818223812
+        },
+        "r20": {
+          "ci_high": 0.5057441113291175,
+          "ci_low": 0.4919909768657603,
+          "expectancy": 0.001864906116692746,
+          "hit_rate": 0.49886732985324533,
+          "mean": 0.001864906116692746,
+          "median": -0.0002570876733116725,
+          "n": 20306,
+          "profit_factor": 1.0328043189078098
+        },
+        "r5": {
+          "ci_high": 0.4926453076713694,
+          "ci_low": 0.47889838534364504,
+          "expectancy": -0.0012107899954161352,
+          "hit_rate": 0.4857691550128028,
+          "mean": -0.0012107899954161352,
+          "median": -0.0014109768001672176,
+          "n": 20308,
+          "profit_factor": 0.9558881101866195
+        },
+        "x5": {
+          "ci_high": 0.488015358164503,
+          "ci_low": 0.4742726502256372,
+          "expectancy": -0.0012656187605375614,
+          "hit_rate": 0.481140437266102,
+          "mean": -0.0012656187605375614,
+          "median": -0.0010678820426550657,
+          "n": 20308,
+          "profit_factor": 0.950921890422301
+        }
+      },
+      "2025": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4807905670274156,
+          "ci_low": 0.47351704875341516,
+          "expectancy": -0.0009063752876631673,
+          "hit_rate": 0.47715259664085896,
+          "mean": -0.0009063752876631673,
+          "median": -0.001,
+          "n": 72459,
+          "profit_factor": 0.91883832504478
+        },
+        "r20": {
+          "ci_high": 0.5038978710376654,
+          "ci_low": 0.49661322922007073,
+          "expectancy": 0.001167339207629798,
+          "hit_rate": 0.500255563690616,
+          "mean": 0.001167339207629798,
+          "median": 6.948780205806668e-05,
+          "n": 72389,
+          "profit_factor": 1.0193893030363856
+        },
+        "r5": {
+          "ci_high": 0.49762266799683286,
+          "ci_low": 0.4903414188701287,
+          "expectancy": -0.0005430321747266453,
+          "hit_rate": 0.493981724318803,
+          "mean": -0.0005430321747266453,
+          "median": -0.0007057511048295098,
+          "n": 72446,
+          "profit_factor": 0.9810280552856914
+        },
+        "x5": {
+          "ci_high": 0.49248743907801984,
+          "ci_low": 0.4852074741983675,
+          "expectancy": -0.0007839212766768196,
+          "hit_rate": 0.4888468652513596,
+          "mean": -0.0007839212766768196,
+          "median": -0.001,
+          "n": 72446,
+          "profit_factor": 0.9697628666332896
+        }
+      }
+    },
+    "day1_rule": {
+      "overnight": {
+        "day1_share": null,
+        "max_drawdown": 0.0,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "n_cohorts": 0,
+        "total_return": 0.0,
+        "worst": null
+      },
+      "plan": {
+        "day1_share": null,
+        "max_drawdown": 0.0,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "n_cohorts": 0,
+        "total_return": 0.0,
+        "worst": null
+      }
+    },
+    "gate_fail_counts": {
+      "DTE": 5575,
+      "ETF put": 804,
+      "call and put both bought": 130,
+      "floor/cross trade": 2346,
+      "issue type Structured Product": 19,
+      "issue type Unit": 2,
+      "moneyness": 2122,
+      "not a buy": 41606,
+      "not clearly opening": 23700,
+      "same-second sold leg": 44
+    },
+    "n_sessions": 250,
+    "official_like": {
+      "plan_follow_return": {
+        "ci_high": null,
+        "ci_low": null,
+        "expectancy": null,
+        "hit_rate": null,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "profit_factor": null
+      },
+      "plan_return": {
+        "ci_high": null,
+        "ci_low": null,
+        "expectancy": null,
+        "hit_rate": null,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "profit_factor": null
+      },
+      "r1": {
+        "ci_high": null,
+        "ci_low": null,
+        "expectancy": null,
+        "hit_rate": null,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "profit_factor": null
+      },
+      "r20": {
+        "ci_high": null,
+        "ci_low": null,
+        "expectancy": null,
+        "hit_rate": null,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "profit_factor": null
+      },
+      "r5": {
+        "ci_high": null,
+        "ci_low": null,
+        "expectancy": null,
+        "hit_rate": null,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "profit_factor": null
+      },
+      "x5": {
+        "ci_high": null,
+        "ci_low": null,
+        "expectancy": null,
+        "hit_rate": null,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "profit_factor": null
+      }
+    },
+    "official_like_daily": {
+      "plan_return": {
+        "boot_ci_high": null,
+        "boot_ci_low": null,
+        "hit_days": null,
+        "mean_daily": null,
+        "n_days": 0,
+        "sd": null,
+        "t_stat": null
+      },
+      "x5": {
+        "boot_ci_high": null,
+        "boot_ci_low": null,
+        "hit_days": null,
+        "mean_daily": null,
+        "n_days": 0,
+        "sd": null,
+        "t_stat": null
+      }
+    },
+    "official_like_portfolio": {
+      "max_drawdown": 0.0,
+      "n_cohorts": 0,
+      "total_return": 0.0
+    },
+    "oi_confirmed": {
+      "GO_confirmed": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r20": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r5": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "x5": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        }
+      },
+      "GO_unconfirmed": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r20": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r5": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "x5": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        }
+      },
+      "all_confirmed": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.48947035263186933,
+          "ci_low": 0.46934627636010884,
+          "expectancy": -0.0005591870645080806,
+          "hit_rate": 0.4793999577435031,
+          "mean": -0.0005591870645080806,
+          "median": -0.0007213921034163731,
+          "n": 9466,
+          "profit_factor": 0.9491400726362926
+        },
+        "r20": {
+          "ci_high": 0.5202667773468054,
+          "ci_low": 0.5001244778010884,
+          "expectancy": 0.00551813601068722,
+          "hit_rate": 0.5101997674664411,
+          "mean": 0.00551813601068722,
+          "median": 0.0030520488528706933,
+          "n": 9461,
+          "profit_factor": 1.089676946898605
+        },
+        "r5": {
+          "ci_high": 0.5062687523020192,
+          "ci_low": 0.48612816381957696,
+          "expectancy": 0.0017050139786265043,
+          "hit_rate": 0.4961969152757236,
+          "mean": 0.0017050139786265043,
+          "median": -0.0005100612423446496,
+          "n": 9466,
+          "profit_factor": 1.0599184677262832
+        },
+        "x5": {
+          "ci_high": 0.4967616209082395,
+          "ci_low": 0.4766275855173464,
+          "expectancy": 0.0011052407100462954,
+          "hit_rate": 0.48668920346503275,
+          "mean": 0.0011052407100462954,
+          "median": -0.001,
+          "n": 9466,
+          "profit_factor": 1.042491858406541
+        }
+      },
+      "all_unconfirmed": {
+        "plan_follow_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "plan_return": {
+          "ci_high": null,
+          "ci_low": null,
+          "expectancy": null,
+          "hit_rate": null,
+          "mean": null,
+          "median": null,
+          "n": 0,
+          "profit_factor": null
+        },
+        "r1": {
+          "ci_high": 0.4901727928955512,
+          "ci_low": 0.46138264101031606,
+          "expectancy": -0.00043665611629525576,
+          "hit_rate": 0.47575757575757577,
+          "mean": -0.00043665611629525576,
+          "median": -0.0009111170545306182,
+          "n": 4620,
+          "profit_factor": 0.9550678335083461
+        },
+        "r20": {
+          "ci_high": 0.4878525029224991,
+          "ci_low": 0.4590348994110213,
+          "expectancy": -0.005918347804488241,
+          "hit_rate": 0.47342156650032546,
+          "mean": -0.005918347804488241,
+          "median": -0.005825893414319493,
+          "n": 4609,
+          "profit_factor": 0.897150226072954
+        },
+        "r5": {
+          "ci_high": 0.5006719854278407,
+          "ci_low": 0.47185573431925154,
+          "expectancy": -0.001619339635301024,
+          "hit_rate": 0.4862524355921195,
+          "mean": -0.001619339635301024,
+          "median": -0.0017175615387013945,
+          "n": 4619,
+          "profit_factor": 0.9391393708879723
+        },
+        "x5": {
+          "ci_high": 0.49092725589353936,
+          "ci_low": 0.4621319187924372,
+          "expectancy": -0.001219229664780193,
+          "hit_rate": 0.47651006711409394,
+          "mean": -0.001219229664780193,
+          "median": -0.0010000000000000009,
+          "n": 4619,
+          "profit_factor": 0.948510329971339
+        }
+      }
+    },
+    "skipped": 2709
+  }
+}
