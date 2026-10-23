@@ -727,15 +727,16 @@ def build_router(svc: DeskService, store, udb: UserDB, jdir: Path, rows_dir: Pat
             except ValueError:
                 raise HTTPException(400, "bad expiry date")
             bars = store.get_ohlc(t, day - timedelta(days=14), day)
-            if bars:
+            # the stock price on its latest UW alert: used when no daily bar is saved, or the bar is older than it
+            al = [row_to_alert(x) for x in store.alerts_between(day - timedelta(days=7), day, t)]
+            al = [x for x in al if x.underlying_price]
+            last = max(al, key=lambda x: x.created_at) if al else None
+            if bars and (last is None or bars[-1].date >= last.session_date):
                 spot, spot_day, source = bars[-1].close, bars[-1].date, "close"
-            else:                                   # no daily bars saved: the stock price on its latest UW alert
-                al = [row_to_alert(x) for x in store.alerts_between(day - timedelta(days=7), day, t)]
-                al = [x for x in al if x.underlying_price]
-                if not al:
-                    raise HTTPException(400, f"No recent price saved for {t}. Enter % out of the money and days instead.")
-                last = max(al, key=lambda x: x.created_at)
+            elif last is not None:
                 spot, spot_day, source = last.underlying_price, last.session_date, "alert"
+            else:
+                raise HTTPException(400, f"No recent price saved for {t}. Enter % out of the money and days instead.")
             otm_pct = (strike - spot) / spot if opt_type == "call" else (spot - strike) / spot
             dte = (exp - day).days
             if dte < 0:

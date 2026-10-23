@@ -121,6 +121,39 @@ Here's what an answer looks like (from Sep 30, shortened and reworded):
   also: BA, GOOG, PH, PATH, ZETA, CAMT
 ```
 
+### Together with Unusual Whales' own MCP
+
+Add UW's hosted MCP next to WhaleProof and one chat does both halves: UW finds the flow, WhaleProof says whether bets
+like it have paid. (UW also offers its MCP as a Claude connector.)
+
+```bash
+claude mcp add --transport http unusual-whales https://api.unusualwhales.com/api/mcp \
+  --header "Authorization: Bearer <your UW key>"
+```
+
+A real exchange from Oct 23, 2026 after the close (shortened):
+
+```text
+> Pull today's biggest bought trades from Unusual Whales, then check each one with WhaleProof.
+
+Unusual Whales (get_flow_alerts: bought at the ask, $1M+, biggest first)
+  HWM   $8.4M  $195 put, Nov 20
+  FIX   $4.6M  $1,860 call, Dec 2027
+  NVDA  $4.2M  $220 call, Nov 20
+  MU    $3.6M  $900 call, Nov 27
+
+WhaleProof (desk_lookup on each, then desk_signals)
+  HWM   not a signal: bearish. Most big put buys are insurance on stock people own, not bets
+        on a drop, so the filter only takes bullish bets
+  FIX   not a signal: 59% out of the money with 420 days left; the filter takes up to 30% out
+        and 7 to 90 days
+  NVDA  not a signal: only 4% out of the money. 162 earlier bets like it: 52% beat the S&P
+        over five days, average 0.0%, and the test periods disagree, so treat it as noise
+  MU    not a signal: 3% out of the money, not big enough
+  What did pass: 4 of 4,780 alerts (NET, NTSK, RBRK, USO). NET: $1.4M in calls 15% out of
+  the money, 84 days, bought at the ask, two more buys the same way in three sessions.
+```
+
 ## What it uses from Unusual Whales
 
 Flow alerts, option contract history, stock prices, gamma exposure, dark-pool levels, market and sector tide, IV rank,

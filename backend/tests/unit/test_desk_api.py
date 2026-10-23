@@ -452,6 +452,20 @@ def test_check_a_bet_falls_back_to_the_price_on_the_tickers_latest_alert(client,
     assert i["spot"] == 100.0 and i["spot_source"] == "alert" and abs(i["otm_pct"] - 0.10) < 1e-9
 
 
+def test_check_a_bet_uses_the_alert_price_when_the_saved_close_is_older(client, tmp_path):
+    """10-23: HWM's last saved close was 3 days old while today's alert had the price, so % out of the money was wrong."""
+    from datetime import datetime, timedelta
+    from whaleproof.core.data_layer.models import Bar
+    day = data_day(datetime.now(UTC))
+    Store(tmp_path / "c.sqlite").put_ohlc("AAA", [Bar(day - timedelta(days=5), 80, 80, 80, 80.0, 1000)])
+    exp = (day + timedelta(days=40)).isoformat()
+    # the fixture's AAA alert: underlying_price 100 on the data day, newer than the saved close
+    i = client.get("/api/desk/lookup", params={"direction": 1, "opt_type": "call", "premium": 1_200_000,
+                                               "ticker": "AAA", "strike": 110, "expiry": exp}).json()["inputs"]
+    assert i["spot"] == 100.0 and i["spot_source"] == "alert" and i["spot_date"] == day.isoformat()
+    assert abs(i["otm_pct"] - 0.10) < 1e-9
+
+
 def test_check_a_bet_signal_shows_its_types_sealed_test_record(client, tmp_path):
     import json
     from datetime import datetime, timedelta
